@@ -1,7 +1,6 @@
 # medical-terminology
 
 Building REST API using Node, Express, and MongoDB (Mongoose)
-Medical Terminology Dictionary
 
 1. initialize a package `npm init -y`
 2. install dependencies
@@ -14,14 +13,20 @@ Medical Terminology Dictionary
    `nodemon app.js` or `npm start` if starter script is available in package.json file
 4. Connect to your mongoose by accessing your MongoDB account.
 5. Import json to MongoDB using MongoDB Compass. Import json file
+6. Create CRUD routes for endpoints
+7. Test API endpoints in postman.
+8. Create the Model
 
 ### Errors:
 
-Message: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
-Solution: Check mongoose connection. Check dotenv import is correct.
+1.  Message: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    Solution: Check mongoose connection. Check dotenv import is correct.
+2.  Message: fatal: the remote end hung up unexpectedly
+    Solution: `git config http.postBuffer 524288000`
 
 ### Resources:
 
+https://blog.postman.com/how-to-create-a-rest-api-with-node-js-and-express/
 https://blog.postman.com/how-to-create-a-rest-api-with-node-js-and-express/#1
 https://www.youtube.com/watch?v=tXS_1VMhdT4
 https://www.freecodecamp.org/news/build-a-restful-api-using-node-express-and-mongodb/

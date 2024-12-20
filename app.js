@@ -3,6 +3,10 @@ const mongoose = require('mongoose');
 const app = express();
 const port = process.env.PORT || 3000;
 
+// Routes for Endpoints
+const routes = require('./routes/routes');
+app.use('/api', routes)
+
 // MongoDB
 require('dotenv').config();
 const mongoString = process.env.DATABASE_URL
@@ -10,11 +14,9 @@ const mongoString = process.env.DATABASE_URL
 // Mongoose
 mongoose.connect(mongoString)
 const mongooseDatabase = mongoose.connection
-
 mongooseDatabase.on('error', error => {
     console.log(error)
 })
-
 mongooseDatabase.once('connected', () => {
     console.log('Database connected')
 })
