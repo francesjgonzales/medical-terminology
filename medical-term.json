@@ -1,0 +1,956 @@
+{
+  "terms-with-no-root": [
+    {
+      "id": "tnr1",
+      "term": "anemia (ah-nee-me-ah)",
+      "definition": "Lack of red blood cells",
+      "image": null
+    },
+    {
+      "id": "tnr2",
+      "term": "esotropia (es-oh-troh-pee-ah)",
+      "definition": "Inward turning of the eye",
+      "image": null
+    },
+    {
+      "id": "tnr3",
+      "term": "neoplasm (nee-oh-plazm)",
+      "definition": "New growth",
+      "image": null
+    },
+    {
+      "id": "tnr4",
+      "term": "exotropia (eck-soh-troh-pee-ah)",
+      "definition": "Outward turning of the eye",
+      "image": null
+    }
+  ],
+  "terms-with-no-prefix": [
+    {
+      "id": "tnp1",
+      "term": "gastritis (gas-try-tis)",
+      "definition": "Inflammation of the stomach",
+      "image": null
+    },
+    {
+      "id": "tnp2",
+      "term": "hepatitis (hep-ah-tye-tis)",
+      "definition": "Inflammation of the liver",
+      "image": null
+    },
+    {
+      "id": "tnp3",
+      "term": "carditis (kar-dye-tis)",
+      "definition": "Inflammation of the heart",
+      "image": null
+    },
+    {
+      "id": "tnp4",
+      "term": "adenitis (ad-eh-nigh-tis)",
+      "definition": "Inflammation of a lymph gland",
+      "image": null
+    },
+    {
+      "id": "tnp5",
+      "term": "cardiology (kar-dee-ol oh-jee)",
+      "definition": "Study of the heart",
+      "image": null
+    },
+    {
+      "id": "tnp6",
+      "term": "gastrology (gas-troll oh-jee)",
+      "definition": "Study of the stomach",
+      "image": null
+    },
+    {
+      "id": "tnp7",
+      "term": "hepatology (hep-ahtol-oh-jee)",
+      "definition": "Study of the liver",
+      "image": null
+    }
+  ],
+  "terms-related-to-anatomy-physiology": [
+    {
+      "id": "tap1",
+      "term": "pathophysiology (path-oh-fiz-ee-ol-oh-jee)",
+      "definition": "Study of changes in the function of a body system caused by disease",
+      "image": null
+    },
+    {
+      "id": "tap2",
+      "term": "pathology (pah-thol-oh-jee)",
+      "definition": "Study of the nature and cause of abnormal conditions.",
+      "image": null
+    },
+    {
+      "id": "tap3",
+      "term": "etiology (ee-tee-ol-oh-jee)",
+      "definition": "Study of the cause of disease."
+    },
+    {
+      "id": "tap4",
+      "term": "Anatomy",
+      "definition": "Anatomy is the study of the parts or structurers of the body.",
+      "image": null
+    },
+    {
+      "id": "tap5",
+      "term": "Physiology",
+      "definition": "Physiology is the study of how the body parts work.",
+      "image": null
+    },
+    {
+      "id": "tap6",
+      "term": "Tissue",
+      "definition": "A grouping of a number of cells together to form something that is larger and more complex than a single cell (e.g. muscle, bone).",
+      "image": null
+    },
+    {
+      "id": "tap7",
+      "term": "Cell",
+      "definition": "The cell is the basic structural unit of the body. Each cell is specialized. Specialized cells are grouped together to form tissue. The material that makes up the cell is called protoplasm.",
+      "image": null
+    },
+    {
+      "id": "tap8",
+      "term": "Protoplasm",
+      "definition": "It includes the Cell Membrane, Cytoplasm, and Nucleus",
+      "image": null
+    },
+    {
+      "id": "tap9",
+      "term": "Cell Membrane",
+      "definition": "The structure that surrounds and protects the cell.",
+      "image": null
+    },
+    {
+      "id": "tap10",
+      "term": "Cytoplasm",
+      "definition": "The material located inside the cell that is not part of the nucleus.",
+      "image": null
+    },
+    {
+      "id": "tap11",
+      "term": "Nucleus",
+      "definition": "The powerhouse of the cell that sustains the life of the cell. Because of the chromosomes, it allows the cell to reproduce.",
+      "image": null
+    },
+    {
+      "id": "tap12",
+      "term": "Tissue",
+      "definition": "Tissue is a group or layer of similarly specialized cells that join together to perform certain specific functions.",
+      "image": null
+    },
+    {
+      "id": "tap13",
+      "term": "Histology (hiss-tol oh-jee)",
+      "definition": "The root hist means tissue and the suffix -logy means study of therefore its is the study of tissue.",
+      "image": null
+    },
+    {
+      "id": "tap14",
+      "term": "Epithelial",
+      "definition": "Covers both the internal and external surfaces of the body.",
+      "image": null
+    },
+    {
+      "id": "tap15",
+      "term": "Connective",
+      "definition": "Holds the organs of the body in place and binds all parts of the body together. Types of connective tissues are: bone, cartilage, and adipose or 'fat'.",
+      "image": null
+    },
+    {
+      "id": "tap16",
+      "term": "Aplasia (ah-play-zee-ah)",
+      "definition": "Lack of development of tissue or an organ. (Prefix 'a' means without).",
+      "image": null
+    },
+    {
+      "id": "tap17",
+      "term": "Hypoplasia (high-poh-play-zee-ah)",
+      "definition": "Incomplete development of tissue or an organ. (Prefix 'hypo' means below, decreased or deficient)",
+      "image": null
+    },
+    {
+      "id": "tap18",
+      "term": "hyperplasia (high-per-play-zee-ah)",
+      "definition": "Abnormal increase in the number of normal cells in a tissue. (Prefix 'hyper' means above, increased or excessive).",
+      "image": null
+    },
+    {
+      "id": "tap19",
+      "term": "Dysplasia (dis-play-zee-ah)",
+      "definition": "Abnormal development or growth of cells. (Prefix 'dys' means difficult, painful or bad).",
+      "image": null
+    },
+    {
+      "id": "tap20",
+      "term": "Anaplasia (an-ah-play-zee-ah)",
+      "definition": "Change in the structure of cells and their orientation to each other. (Prefix 'an' means without)",
+      "image": null
+    },
+    {
+      "id": "tap21",
+      "term": "Gland",
+      "definition": "A gland is a group of specialized cellls that secrete a material used somewhere else in the body. The root for gland is 'aden/o'.",
+      "image": null
+    },
+    {
+      "id": "tap22",
+      "term": "Exocrine (eck-soh-krin)",
+      "definition": "A type of gland that secretes their substances into ducts that take it to the area of the body where it will be used, e.g. the sweat gland.",
+      "image": null
+    },
+    {
+      "id": "tap23",
+      "term": "Endocrine (en-doh-krin)",
+      "definition": "A type of glad that don't have ducts and their secretions flow directly into the blood stream. The blood transports the secretions to the area of the body where it will be used, e.g. the thyroid gland.",
+      "image": null
+    },
+    {
+      "id": "tap24",
+      "term": "Pancreas",
+      "definition": "A gland in the body which functions both as an exocrine and endocrine.",
+      "image": null
+    }
+  ],
+  "body-systems": [
+    {
+      "id": "bs1",
+      "term": "Skeletal System",
+      "common-roots": [
+        "Bones: oste/o",
+        "Joints: arthr/o",
+        "Cartilage: chondr/o"
+      ],
+      "definition": "Support and shape the body. Protection, storage of minerals, and production of blood cells.",
+      "image": null
+    },
+    {
+      "id": "bs2",
+      "term": "Muscular System",
+      "common-roots": [
+        "Muscles: my/o",
+        "Fascia: fasci/o",
+        "Tendons: ten/o, tend/o, tendin/o"
+      ],
+      "definition": "Movement of the body. Holds the body erect and generates body heat.",
+      "image": null
+    },
+    {
+      "id": "bs3",
+      "term": "Cardiovascular System",
+      "common-roots": [
+        "Heart: cardi/o",
+        "Arteries: arteri/o",
+        "Veins: ven/o, phleb/o",
+        "Blood: hem/o, hemat/o"
+      ],
+      "definition": "Carries food and needed oxygen to body cells.",
+      "image": null
+    },
+    {
+      "id": "bs4",
+      "term": "Lymphatic and immune System",
+      "common-roots": [
+        "Lymph nodes and vessels: lymph/o",
+        "Tonsils: tonsill/o",
+        "Spleen: splen/o"
+      ],
+      "definition": "Provides nutrients and removes waste from the tissue. Protects the body from harmful substances.",
+      "image": null
+    },
+    {
+      "id": "bs5",
+      "term": "Respiratory System",
+      "common-roots": [
+        "Nose: nas/o",
+        "Pharynx: pharyng/o",
+        "Trachea: trache/o",
+        "Larynx: laryng/o",
+        "Lungs: pneum/o, pneumon/o"
+      ],
+      "definition": "Brings oxygen into the body for use by the cells and removes the waste product carbon dioxide.",
+      "image": null
+    },
+    {
+      "id": "bs6",
+      "term": "Digestive System",
+      "common-roots": [
+        "Mouth: or/o",
+        "Esophagus: esophag/o",
+        "Stomach: gastr/o",
+        "Small intestine: enter/o",
+        "Large intestine: col/o",
+        "Liver: hepat/o",
+        "Pancreas: pancreat/o"
+      ],
+      "definition": "Digestion of food and absorption of the nutrients needed for life. Elimination of solid body wastes.",
+      "image": null
+    },
+    {
+      "id": "bs7",
+      "term": "Urinary Sytem",
+      "common-roots": [
+        "Kidney: nephr/o",
+        "Ureters: ureter/o",
+        "Urinary bladder: cyst/o, vesic/o",
+        "Urethra: urrethr/o"
+      ],
+      "definition": "Filters blood to remove waste products and maintain the right fluid balance in the body.",
+      "image": null
+    },
+    {
+      "id": "bs8",
+      "term": "Nervous Sytem",
+      "common-roots": [
+        "Nerves: neur/o",
+        "Brain: encephal/o, cerebr/o",
+        "Spinal cord: myel/o"
+      ],
+      "definition": "Coordinating mechanism within the body. Transmits messages throughout the body.",
+      "image": null
+    },
+    {
+      "id": "bs9",
+      "term": "Integumentary System",
+      "common-roots": ["Skin: derm/o, dermat/o, cutane/o"],
+      "definition": "Protection of the body. Controls temperature and water regulation.",
+      "image": null
+    },
+    {
+      "id": "bs10",
+      "term": "Endocrine System",
+      "common-roots": [
+        "Adrenal: adren/o",
+        "Pituitary: pituit/o",
+        "Thyroid: thyroid/o"
+      ],
+      "definition": "Integrates body functions and growth.",
+      "image": null
+    },
+    {
+      "id": "bs11",
+      "term": "Reproductive System",
+      "common-roots": [
+        "Testes: orch/o, orchid/o",
+        "Ovaries: oophor/o, ovari/o",
+        "Uterus: uter/o, hyster/o, metr/o"
+      ],
+      "definition": "Production of new life.",
+      "image": null
+    }
+  ],
+  "specialties-and-specialists": [
+    {
+      "id": "ss1",
+      "body-system": "Digestive System",
+      "specialist": "Gastroenterologist",
+      "specialty": "Gastroenterology"
+    },
+    {
+      "id": "ss2",
+      "body-system": "Nervous System (Mental, Emotional, Behavioural, Disorder)",
+      "specialist": "Neurologist (Psychiatrist)",
+      "specialty": "Neurology (Psychology)"
+    },
+    {
+      "id": "ss3",
+      "body-system": "Reproductive System (Female)",
+      "specialist": "Gynecologist",
+      "specialty": "Gynecology"
+    },
+    {
+      "id": "ss4",
+      "body-system": "Urinary System",
+      "specialist": "Urologist, Nephrologist",
+      "specialty": "Urology, Nephrology"
+    },
+    {
+      "id": "ss5",
+      "body-system": "Cardiovascular System",
+      "specialist": "Cardiologist",
+      "specialty": "Cardiology"
+    },
+    {
+      "id": "ss6",
+      "body-system": "Immune System",
+      "specialist": "Immunologist",
+      "specialty": "Immunology"
+    },
+    {
+      "id": "ss7",
+      "body-system": "Musculoskeletal System",
+      "specialist": "Orthopedic Specialist",
+      "specialty": "Orthopedics"
+    },
+    {
+      "id": "ss8",
+      "body-system": "Respiratory System",
+      "specialist": "Respirologist",
+      "specialty": "Respirology"
+    },
+    {
+      "id": "ss9",
+      "body-system": "Endocrine System",
+      "specialist": "Endorinologist",
+      "specialty": "Endocrinology"
+    },
+    {
+      "id": "ss10",
+      "body-system": "Integumentary System",
+      "specialist": "Dermatologist",
+      "specialty": "Dermatology"
+    }
+  ],
+  "directional-terms": [
+    {
+      "id": "dt1",
+      "term": "Superior",
+      "definition": "Above or toward the head.",
+      "example": "The head is superior to the neck.",
+      "common-roots": "super/o"
+    },
+    {
+      "id": "dt2",
+      "term": "Inferior",
+      "definition": "Below; toward the tail.",
+      "example": "The abdominal cavity is anterior to the spinal cavity.",
+      "common-roots": "infer/o"
+    },
+    {
+      "id": "dt3",
+      "term": "Anterior or Ventral",
+      "definition": "Toward the front surface of the body.",
+      "example": "The abdominal cavity is anterior to the spinal cavity.",
+      "common-roots": "anter/o and ventr/o"
+    },
+    {
+      "id": "dt4",
+      "term": "Posterior or Dorsal",
+      "definition": "Toward the back surgace of the body",
+      "example": "The spinal cavity is posterior to the thoracic cavity.",
+      "common-roots": "poster/o and dors/o"
+    },
+    {
+      "id": "dt5",
+      "term": "Medial",
+      "definition": "Toward the midline of the body (Midline is an imaginary line drawm down through the center of the body from the head to the feet).",
+      "example": "The big toe is medial to the small toe.",
+      "common-roots": "medi/o"
+    },
+    {
+      "id": "dt6",
+      "term": "Lateral",
+      "definition": "Away from the midline",
+      "example": "The ear is lateral to the nose.",
+      "common-roots": "later/o"
+    },
+    {
+      "id": "dt7",
+      "term": "Proximal",
+      "definition": "Toward the point of origin, or nearest the point of attachment to the trunk.",
+      "example": "The elbow is proximal to the wrist and the wrist is proximal to the fingers.",
+      "common-roots": "proxim/o"
+    },
+    {
+      "id": "dt8",
+      "term": "Distal",
+      "definition": "Farthest away from the p oint of origin or farthest away from the point of attachment to the trunk.",
+      "example": "The intestines are distal to the stomach and the stomach is distal to the esophagus.",
+      "common-roots": "dist/o"
+    },
+    {
+      "id": "dt9",
+      "term": "Peripheral",
+      "definition": "Away from the center",
+      "example": "Peripheral nerces are those that go away from the brain and spinal cord.",
+      "common-roots": null
+    },
+    {
+      "id": "dt10",
+      "term": "Supine",
+      "definition": "Lying on the back and facing up.",
+      "example": null,
+      "common-roots": null
+    },
+    {
+      "id": "dt11",
+      "term": "Prone",
+      "definition": "Lying on the abdomen, facing down.",
+      "example": null,
+      "common-roots": null
+    },
+    {
+      "id": "dt12",
+      "term": "Dorsal (door-sal)",
+      "definition": "the back of the body cavity. Smaller cavities are Cranial (kray-nee-al) contains the brain, and Spinal (spy-nal) contains the spinal cord",
+      "example": null,
+      "common-roots": null
+    },
+    {
+      "id": "dt13",
+      "term": "Ventral (ven-tral)",
+      "definition": "the front of the body cavity. Smaller cavities are Thoracic (thoh-ras-ick) contains the lungs, Abdominal (ab-dom-ih-nal) contains the kidneys, and Pelvic (pel-vick) contains the uterus.",
+      "example": null,
+      "common-roots": null
+    }
+  ],
+  "roots-of-body-systems": [
+    {
+      "id": "rbs1",
+      "body-system": "Integumentary System",
+      "common-roots": "cili/o, pil/o",
+      "definition": "hair",
+      "example": "pilosebaceous: pertaining to the hair follicle and sebaceous gland."
+    },
+    {
+      "id": "rbs2",
+      "body-system": "Integumentary System",
+      "common-roots": "derm/o, dermat/o, cutane/o",
+      "definition": "skin",
+      "example": "dermatologist: doctor who specializes in diseases of the skin."
+    },
+    {
+      "id": "rbs3",
+      "body-system": "Integumentary System",
+      "common-roots": "onych/o, ungu/o",
+      "definition": "nail",
+      "example": "onychitis: inflammation of the nail."
+    },
+    {
+      "id": "rbs4",
+      "body-system": "Nervous System",
+      "common-roots": "cerebr/o, encephal/o",
+      "definition": "brain",
+      "example": "cerebral: pertaining to the brain"
+    },
+    {
+      "id": "rb5",
+      "body-system": "Nervous System",
+      "common-roots": "myel/o",
+      "definition": "spinal cord",
+      "example": "myelogram: X-Ray of the spinal cord."
+    },
+    {
+      "id": "rb6",
+      "body-system": "Nervous System",
+      "common-roots": "neur/o",
+      "definition": "nerve",
+      "example": "neuritis: inflammation of a nerve."
+    },
+    {
+      "id": "rb7",
+      "body-system": "Nervous System",
+      "common-roots": "psych/o",
+      "definition": "mind",
+      "example": "psychosis: disorder of the mind."
+    },
+    {
+      "id": "rb8",
+      "body-system": "Nervous System",
+      "common-roots": "mening/o, meningi/o",
+      "definition": "meninges",
+      "example": "meningitis: inflammation of the meninges."
+    },
+    {
+      "id": "rb9",
+      "body-system": "Nervous System",
+      "common-roots": "corti/o",
+      "definition": "cortex",
+      "example": "cortical: pertaining to the cortex."
+    },
+    {
+      "id": "rb10",
+      "body-system": "Musculoskeletal System",
+      "common-roots": "arthr/o",
+      "definition": "joint",
+      "example": "arthrogram: X-ray picture of a joint"
+    },
+    {
+      "id": "rb11",
+      "body-system": "Musculoskeletal System",
+      "common-roots": "chondr/o",
+      "definition": "cartilage",
+      "example": "chondrectomy: surgincal removal of a cartilage"
+    },
+    {
+      "id": "rb12",
+      "body-system": "Musculoskeletal System",
+      "common-roots": "crani/o",
+      "definition": "skull",
+      "example": "craniotomy: surgical opening into the skull"
+    },
+    {
+      "id": "rb13",
+      "body-system": "Musculoskeletal System",
+      "common-roots": "cost/o",
+      "definition": "rib",
+      "example": "costectomy: surgical removal of a rib"
+    },
+    {
+      "id": "rb14",
+      "body-system": "Musculoskeletal System",
+      "common-roots": "my/o, muscul/o",
+      "definition": "muscle",
+      "example": "myopathy: disease of the muscle"
+    },
+    {
+      "id": "rb15",
+      "body-system": "Musculoskeletal System",
+      "common-roots": "myel/o",
+      "definition": "marrow",
+      "example": "myelopathy: disease of bone marrow"
+    },
+    {
+      "id": "rb16",
+      "body-system": "Musculoskeletal System",
+      "common-roots": "oste/o",
+      "definition": "bone",
+      "example": "osteoplasty: surgical repair of a bone"
+    },
+    {
+      "id": "rb17",
+      "body-system": "Musculoskeletal System",
+      "common-roots": "pelv/o",
+      "definition": "pelvis",
+      "example": "pelvimetry: measurement of the dimensions of the pelvis"
+    },
+    {
+      "id": "rb18",
+      "body-system": "Musculoskeletal System",
+      "common-roots": "spin/o",
+      "definition": "spine",
+      "example": "spinal: pertaining to the spine"
+    },
+    {
+      "id": "rb19",
+      "body-system": "Musculoskeletal System",
+      "common-roots": "tend/o, tendin/o, ten/o",
+      "definition": "tendon",
+      "example": "tenolysis: to free a tendon from adhesions"
+    },
+    {
+      "id": "rb20",
+      "body-system": "Musculoskeletal System",
+      "common-roots": "thorac/o",
+      "definition": "chest",
+      "example": "thoracotomy: surgical opening into the chest"
+    },
+    {
+      "id": "rb21",
+      "body-system": "Musculoskeletal System",
+      "common-roots": "vertebr/o, spondyl/o",
+      "definition": "vertebra",
+      "example": "spondylosis: degenration of vertebra"
+    },
+    {
+      "id": "rb22",
+      "body-system": "Sensory System",
+      "common-roots": "blephar/o",
+      "definition": "eyelid",
+      "example": "blepharitis: inflammation of the eyelid"
+    },
+    {
+      "id": "rb23",
+      "body-system": "Sensory System",
+      "common-roots": "ophthalm/o, opt/o ocul/o, optic/o",
+      "definition": "eye",
+      "example": "ocular: pertaining to the eye"
+    },
+    {
+      "id": "rb24",
+      "body-system": "Sensory System",
+      "common-roots": "ot/o, audit/o, audi/o",
+      "definition": "ear",
+      "example": "otoplasty: surgical repair of the ear"
+    },
+    {
+      "id": "rb25",
+      "body-system": "Digestive System",
+      "common-roots": "abdomin/o",
+      "definition": "abdomen",
+      "example": "abdominal: pertaining to the abdomen"
+    },
+    {
+      "id": "rb26",
+      "body-system": "Digestive System",
+      "common-roots": "cheil/o, labi/o",
+      "definition": "lips",
+      "example": "cheiloplasty: surgical repair of the lip"
+    },
+    {
+      "id": "rb27",
+      "body-system": "Digestive System",
+      "common-roots": "chol/e, cyst/o",
+      "definition": "gall bladder",
+      "example": "cholecystectomy: surgical removal of gall bladder"
+    },
+    {
+      "id": "rb28",
+      "body-system": "Digestive System",
+      "common-roots": "col/o, colon/o",
+      "definition": "large intestine, colon",
+      "example": "colonoscopy: examination of the large intestine using a scope"
+    },
+    {
+      "id": "rb29",
+      "body-system": "Digestive System",
+      "common-roots": "enter/o",
+      "definition": "small intestine",
+      "example": "enteritis: inflammation of the small intestine"
+    },
+    {
+      "id": "rb30",
+      "body-system": "Digestive System",
+      "common-roots": "esophag/o",
+      "definition": "esophagus",
+      "example": "esophagitis: inflammation of esophagus"
+    },
+    {
+      "id": "rb31",
+      "body-system": "Digestive System",
+      "common-roots": "gastr/o",
+      "definition": "stomach",
+      "example": "gastric: pertaining to the stomach"
+    },
+    {
+      "id": "rb32",
+      "body-system": "Digestive System",
+      "common-roots": "gingiv/o",
+      "definition": "gums",
+      "example": "gingivitis: inflammation of the gums"
+    },
+    {
+      "id": "rb33",
+      "body-system": "Digestive System",
+      "common-roots": "gloss/o, lingu/o",
+      "definition": "tongue",
+      "example": "glossal: pertaining to the tongue"
+    },
+    {
+      "id": "rb34",
+      "body-system": "Digestive System",
+      "common-roots": "hepat/o",
+      "definition": "liver",
+      "example": "hepatic: pertaining th the liver"
+    },
+    {
+      "id": "rb35",
+      "body-system": "Digestive System",
+      "common-roots": "lapar/o",
+      "definition": "abdomen",
+      "example": "laparotomy: surgical opening into the abdomen"
+    },
+    {
+      "id": "rb36",
+      "body-system": "Digestive System",
+      "common-roots": "odont/o, dent/o, dent/i",
+      "definition": "teeth",
+      "example": "odontal: pertaining to the teeth"
+    },
+    {
+      "id": "rb37",
+      "body-system": "Digestive System",
+      "common-roots": "or/o, stomat/o",
+      "definition": "mouth",
+      "example": "stomatitis: inflammation of the mouth"
+    },
+    {
+      "id": "rb38",
+      "body-system": "Digestive System",
+      "common-roots": "pancreat/o",
+      "definition": "pancreas",
+      "example": "pancreatitis: inflammation of the pancreas"
+    },
+    {
+      "id": "rb39",
+      "body-system": "Digestive System",
+      "common-roots": "pharyng/o",
+      "definition": "throat, pharynx",
+      "example": "pharyngeal: pertaining to the pharnyx"
+    },
+    {
+      "id": "rb40",
+      "body-system": "Digestive System",
+      "common-roots": "rect/o",
+      "definition": "rectum",
+      "example": "rectal: pertaining to the rectum"
+    },
+    {
+      "id": "rb41",
+      "body-system": "Digestive System",
+      "common-roots": "splen/o",
+      "definition": "spleen",
+      "example": "splenectomy: surgical removal of spleen"
+    },
+    {
+      "id": "rb42",
+      "body-system": "Urinary System",
+      "common-roots": "cyst/o",
+      "definition": "bladder",
+      "example": "X-ray picture of the bladder"
+    },
+    {
+      "id": "rb43",
+      "body-system": "Urinary System",
+      "common-roots": "pyel/o",
+      "definition": "renal pelvis",
+      "example": "pyelitis: inflammation of the renal pelvis"
+    },
+    {
+      "id": "rb44",
+      "body-system": "Urinary System",
+      "common-roots": "ren/o, nephr/o",
+      "definition": "kidneys",
+      "example": "renal: pertaining to the kidneys"
+    },
+    {
+      "id": "rb45",
+      "body-system": "Urinary System",
+      "common-roots": "ureter/o",
+      "definition": "ureters",
+      "example": "ureteroplasty: surgical repair of a ureter"
+    },
+    {
+      "id": "rb46",
+      "body-system": "Urinary System",
+      "common-roots": "urethr/o",
+      "definition": "urethra",
+      "example": "urethropexy: surgical fixation of the urethra"
+    },
+    {
+      "id": "rb47",
+      "body-system": "Circulatory System",
+      "common-roots": "angi/o, vascul/o, vas/o",
+      "definition": "vessel",
+      "example": "angiogram: x-ray study of blood vessels after a dye is injected."
+    },
+    {
+      "id": "rb48",
+      "body-system": "Circulatory System",
+      "common-roots": "arteri/o",
+      "definition": "artery",
+      "example": "arterionecrosis: necrosis of an artery"
+    },
+    {
+      "id": "rb49",
+      "body-system": "Circulatory System",
+      "common-roots": "cardi/o",
+      "definition": "heart",
+      "example": "cardiology: study of diseases of the heart"
+    },
+    {
+      "id": "rb50",
+      "body-system": "Circulatory System",
+      "common-roots": "hem/o, hemat/o",
+      "definition": "blood",
+      "example": "hematologist: physician who specializes in diseases of the blood"
+    },
+    {
+      "id": "rb51",
+      "body-system": "Circulatory System",
+      "common-roots": "ven/o, phleb/o",
+      "definition": "vein",
+      "example": "phlebotomy: surgical opening into a vein"
+    },
+    {
+      "id": "rb52",
+      "body-system": "Endocrine System",
+      "common-roots": "aden/o",
+      "definition": "gland",
+      "example": "adenectomy: surgical removal of gland"
+    },
+    {
+      "id": "rb53",
+      "body-system": "Endocrine System",
+      "common-roots": "adren/o, adrenal/o",
+      "definition": "adrenal gland",
+      "example": "adrenalitis: inflammation of adrenal gland"
+    },
+    {
+      "id": "rb54",
+      "body-system": "Endocrine System",
+      "common-roots": "parathyroid/o, parathyr/o",
+      "definition": "parathyroid gland",
+      "example": "parathyroidectomy: surgical removal of the parathyroid gland"
+    },
+    {
+      "id": "rb55",
+      "body-system": "Endocrine System",
+      "common-roots": "pituit/o",
+      "definition": "pituitary gland",
+      "example": "pituitism: disorder of the pituitary gland"
+    },
+    {
+      "id": "rb56",
+      "body-system": "Endocrine System",
+      "common-roots": "thyroid/o, thry/o",
+      "definition": "thyroid gland",
+      "example": "thyrotoxicosis: condition caused by too much thyroid hormone"
+    },
+    {
+      "id": "rb57",
+      "body-system": "Lymphatic and Immune System",
+      "common-roots": "adenoid/o",
+      "definition": "adenoids",
+      "example": "adenoidectomy: surgical removal of the adenoids"
+    },
+    {
+      "id": "rb58",
+      "body-system": "Lymphatic and Immune System",
+      "common-roots": "lymph/o",
+      "definition": "lymph fluid",
+      "example": "lymphatic: pertaining to lymph fluid"
+    },
+    {
+      "id": "rb59",
+      "body-system": "Lymphatic and Immune System",
+      "common-roots": "lymphaden/o",
+      "definition": "lymph gland",
+      "example": "lymphadenitis: inflammation of a lymph gland"
+    },
+    {
+      "id": "rb60",
+      "body-system": "Lymphatic and Immune System",
+      "common-roots": "lymphangi/o",
+      "definition": "lymph vessels",
+      "example": "lymphangiogram: x-ray picture of a lymph vessel using a dye"
+    },
+    {
+      "id": "rb61",
+      "body-system": "Lymphatic and Immune System",
+      "common-roots": "splen/o",
+      "definition": "spleen",
+      "example": "spelenctomy: surgical removal of the spleen"
+    },
+    {
+      "id": "rb62",
+      "body-system": "Lymphatic and Immune System",
+      "common-roots": "tonsill/o",
+      "definition": "tonsils",
+      "example": "tonsillectomy: surgical removal of the tonsils"
+    },
+    {
+      "id": "rb63",
+      "body-system": "Lymphatic and Immune System",
+      "common-roots": "thym/o",
+      "definition": "thymus",
+      "example": "thymectomy: surgical removal of the thymus gland"
+    },
+    {
+      "id": "rb64",
+      "body-system": "Respiratory System",
+      "common-roots": "alveol/o",
+      "definition": "air sacs",
+      "example": "alveolar: pertaining to an air sac"
+    },
+    {
+      "id": "rb65",
+      "body-system": "Respiratory System",
+      "common-roots": "bronch/o, bronchi/o",
+      "definition": "bronchus",
+      "example": "bronchitis: inflammation of a bronchus"
+    }
+  ]
+}
