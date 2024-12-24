@@ -5,10 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
 </head>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="module" src="script.js"></script>
 
 <body>
 
+
+
+    <h1>Test Data</h1>
+    <form class="form" id="myForm" action="">
+        <label>Post a Medical Term</label>
+        <input type="number" id="whatsappNumber"></input>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="showData"></p>
+
 </body>
+<script>
+    axios.get('http://localhost:3000/getAll')
+        .then(function (response) {
+            // handle success
+            const allData = response.data
+            console.log(allData);
+
+            let allMedicalTerm = allData.map((medData) => {
+                return `${medData.term} <br> ${medData.definition}`
+            })
+            document.querySelector("#showData").innerHTML = allMedicalTerm
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+        })
+        .finally(function () {
+            // always executed
+        })
+</script>
 
 </html>

@@ -2,19 +2,18 @@ const express = require('express');
 const router = express.Router();
 
 // Import Model
-const Model = require('../models/model')
-
-module.exports = router;
+const Model = require('../models/model');
+/* const { getAllMedicalTerm } = require('../controller/medicalTermController'); */
 
 //Post Method
 router.post('/post', (req, res) => {
-    res.send('Post API')
+    res.send(req.body)
 })
 
 //Get all Method
-router.get('/getAll', (req, res) => {
-    res.send('Get All API')
-})
+/* router.get('/getAll', getAllMedicalTerm) */
+
+
 
 //Get by ID Method
 router.get('/getOne/:id', (req, res) => {
@@ -30,3 +29,5 @@ router.patch('/update/:id', (req, res) => {
 router.delete('/delete/:id', (req, res) => {
     res.send('Delete by ID API')
 })
+
+module.exports = router;

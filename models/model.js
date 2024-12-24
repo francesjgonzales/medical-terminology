@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const medicalTermSchema = new mongoose.Schema(
+const medicalTermSchema = mongoose.Schema(
     {
         id: {
             required: true,
@@ -14,19 +14,11 @@ const medicalTermSchema = new mongoose.Schema(
             required: true,
             type: String
         },
-        common_roots: {
-            required: true,
-            type: String
-        },
-        example: {
-            required: true,
-            type: String
-        },
         image: {
-            required: true,
+            required: false,
             type: String
         },
     }
 )
 
-module.exports = mongoose.model('Data', medicalTermSchema)
+module.exports = mongoose.model('term_no_root', medicalTermSchema)
