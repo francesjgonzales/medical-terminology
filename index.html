@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A comprehensive medical terminology dictionary designed for beginners learning anatomy and physiology. Simplify complex terms and enhance your understanding.">
     <title>Document</title>
 </head>
 
@@ -27,26 +29,7 @@
     <script type="text" src="dist/purify.min.js"></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script>
-        axios.get('http://localhost:3000/getAllSubmitted')
-            .then(function (response) {
-                // handle success
-                const allData = response.data
-                console.log(allData);
 
-                let allMedicalTerm = allData.map((medData) => {
-                    return `${medData.term} <br> ${medData.definition}`
-                })
-                document.querySelector("#showData").innerHTML = allMedicalTerm
-            })
-            .catch(function (error) {
-                // handle error
-                console.log(error);
-            })
-            .finally(function () {
-                // always executed
-            })
-    </script>
 
 
 </body>
