@@ -4,6 +4,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 const cors = require('cors'); //cross browser
 
+// To connect index.html - to fix later when folders are organized in MVC
+const path = require('path')
+
 // Routes for Endpoints
 /* const routes = require('./routes/routes');
 app.use('/api', routes) */
@@ -24,7 +27,13 @@ mongooseDatabase.once('connected', () => {
 // Middleware to parse JSON bodies
 app.use(express.json());
 const medicalTerm = require('./models/model')
+
 app.use(cors());
+
+// CRUD 1 - Main page
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html')
+})
 
 // CRUD 1 - Read all data using GET response
 app.get('/getAll', async (req, res) => {
@@ -49,7 +58,49 @@ app.get('/getAll/:id', async (req, res) => {
     }
 })
 
-app.post('/post', async (req, res) => {
+// CRUD 1 - Read all submitted data using GET response
+app.get('/getAllSubmitted', async (req, res) => {
+    try {
+        const allSubmittedMedicalTerm = await newData.find({});
+        res.status(200).json(allSubmittedMedicalTerm);
+    } catch (error) {
+        res.status(500)
+        throw new Error(error.message)
+    }
+})
+
+const newMedTerm = new mongoose.Schema(
+    {
+        term: String,
+        definition: String
+    }
+)
+
+const newData = mongoose.model('submitted_form', newMedTerm)
+
+/* Nodejs middleware - JSON body parser */
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended: false }))
+app.post('/submit', (req, res) => {
+    try {
+        const { term, definition } = req.body;
+        const newMedTerm = newData({
+            term,
+            definition,
+        });
+        newMedTerm.save();
+        /* const allMedicalTerm = await medicalTerm.create(req.body); */
+        /* res.status(200).json(newMedTerm) */
+        /* res.send('Data submitted successfully', ) */
+        res.redirect('/')
+
+    } catch (error) {
+        res.status(500)
+        throw new Error(error.message)
+    }
+})
+
+/* app.post('/post', async (req, res) => {
     try {
         const allMedicalTerm = await medicalTerm.create(req.body);
         res.status(200).json(allMedicalTerm)
@@ -59,6 +110,7 @@ app.post('/post', async (req, res) => {
         throw new Error(error.message)
     }
 })
+ */
 
 app.put('/update/:id', async (req, res) => {
     try {

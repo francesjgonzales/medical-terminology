@@ -31,7 +31,7 @@
 1. Locate Mongoose API endpoint where you will find it in your Postman
 2. Create a script.js file and use a Promise based HTTP client to fetch your data from the API. We'll be using Axios for this project.
 3. Use DOM manipulation to show the data in the front-end.
-4. Useful Javascript array methods are filter() to create a new array based on multiple arrays of document, map() to
+4. Useful Javascript array methods are filter() to create a new array based on multiple arrays of document, map() to create a new set of array that calls out a function that provides each element in an array.
 
 ### Errors:
 
@@ -43,9 +43,9 @@
 ### Resources:
 
 https://blog.postman.com/how-to-create-a-rest-api-with-node-js-and-express/
-https://blog.postman.com/how-to-create-a-rest-api-with-node-js-and-express/#1
 https://www.youtube.com/watch?v=tXS_1VMhdT4
 https://www.freecodecamp.org/news/build-a-restful-api-using-node-express-and-mongodb/
 https://dev.to/kodebae/how-to-remove-a-leaked-env-file-from-github-permanently-3lei
 [dummyjson](https://dummyjson.com/)
 [Build Restful CRUD API with Node.js, Express and MongoDB by Devtamin](https://www.youtube.com/watch?v=9OfL9H6AmhQ)
+[Store html form data in MongoDb using Nodejs and express](https://www.youtube.com/watch?v=YD5iOPCO9z8)
