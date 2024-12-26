@@ -105,8 +105,8 @@ app.post('/submit', (req, res) => {
         newMedTerm.save();
         /* const allMedicalTerm = await medicalTerm.create(req.body); */
         /* res.status(200).json(newMedTerm) */
-        /* res.redirect('Data submitted successfully') */
-        res.redirect('/')
+        res.send('Data submitted successfully')
+        /* res.redirect('/') */
 
     } catch (error) {
         res.status(500)
