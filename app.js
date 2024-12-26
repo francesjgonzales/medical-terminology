@@ -71,8 +71,20 @@ app.get('/getAllSubmitted', async (req, res) => {
 
 const newMedTerm = new mongoose.Schema(
     {
-        term: String,
-        definition: String
+        term: {
+            type: String,
+            unique: true
+        },
+        definition: {
+            type: String
+        },
+        image: {
+            type: String
+        },
+        category: {
+            type: String,
+            enum: ['Term with no root', 'Term with no prefix'],
+        }
     }
 )
 
@@ -81,17 +93,19 @@ const newData = mongoose.model('submitted_form', newMedTerm)
 /* Nodejs middleware - JSON body parser */
 const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
+
 app.post('/submit', (req, res) => {
     try {
-        const { term, definition } = req.body;
+        const { term, definition, category } = req.body;
         const newMedTerm = newData({
             term,
             definition,
+            category,
         });
         newMedTerm.save();
         /* const allMedicalTerm = await medicalTerm.create(req.body); */
         /* res.status(200).json(newMedTerm) */
-        /* res.send('Data submitted successfully', ) */
+        /* res.redirect('Data submitted successfully') */
         res.redirect('/')
 
     } catch (error) {

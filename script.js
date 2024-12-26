@@ -1,13 +1,15 @@
-const clean = DOMPurify.sanitize(index.html, { WHOLE_DOCUMENT: true });
+/* const clean = DOMPurify.sanitize(index.html, { WHOLE_DOCUMENT: true });
+ */
+
 
 axios.get('http://localhost:3000/getAllSubmitted')
     .then(function (response) {
         // handle success
         const allData = response.data
-        console.log(allData);
+        console.log(allData.term);
 
         let allMedicalTerm = allData.map((medData) => {
-            return `${medData.term} <br> ${medData.definition}`
+            return `<td>${medData}</td>`
         })
         document.querySelector("#showData").innerHTML = allMedicalTerm
     })

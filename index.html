@@ -6,31 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="A comprehensive medical terminology dictionary designed for beginners learning anatomy and physiology. Simplify complex terms and enhance your understanding.">
-    <title>Document</title>
+    <title>Medical Terminology</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
-
-
 
 <body>
 
+    <section class="container-sm mt-5">
+        <h1>Add your term</h1>
+        <form method="post" id="myForm" action="/submit" class="form">
+            <div class="mb-3">
+                <label>Medical Term</label>
+                <input name="term" id="term" type="text" class="form-control" required>
+                <div class="valid-feedback">
+                    This word exists in the Medical Term
+                </div>
+            </div>
+            <div class="mb-3">
+                <label>Description</label>
+                <input name="definition" id="definition" type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
 
+                <!-- <input name="category" id="category" type="text" class="form-control"> -->
 
-    <h1>Test Data</h1>
-    <form method="post" id="myForm" action="/submit" class="form">
-        <label>Post a Medical Term</label>
-        <input name="term" id="term" type="text">
-        <input name="definition" id="definition" type="text">
-        <button type="submit">Submit</button>
-    </form>
+                <select name="category" id="category" type="text" class="form-select" required>
+                    <option selected>Add the category</option>
+                    <option value="Term with no root">Terms with no root</option>
+                    <option value="Term with no prefix">Terms with no prefix</option>
+                </select>
 
-    <p id="showData"></p>
+            </div>
+            <div class="mb-3">
+                <button type="reset" class="btn btn-primary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </section>
+    <section class="container-sm mt-5">
+        <h1>Medical Terminology</h1>
 
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Term</th>
+                    <th scope="col">Definition</th>
+                    <th scope="col">Category</th>
+                </tr>
+            </thead>
+            <tbody id="showData">
 
-    <script type="text" src="dist/purify.min.js"></script>
-    <script src="script.js"></script>
+            </tbody>
+        </table>
+
+    </section>
+
+    <!-- Axios API fetching -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text" src="/script.js"></script>
+
+    <script>
+        axios.get('http://localhost:3000/getAllSubmitted')
+            .then(function (response) {
+                // handle success
+                const allData = response.data
+                console.log(allData);
+
+                let allMedicalTerm = allData.map((medData) => {
+                    return `<tr><td>${medData.term}</td> <td> ${medData.definition}</td> <td>${medData.category}</td></tr> `
+                }).join("");
+                document.querySelector("#showData").innerHTML = allMedicalTerm
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+            .finally(function () {
+                // always executed
+            })
+
+    </script>
+
+    <!-- Delete later -->
+    <script type="text" src="dist/purify.min.js"></script>
 
 
+
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 
 </body>
 
