@@ -65,10 +65,10 @@
 
     <!-- Axios API fetching -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script type="text" src="/script.js"></script>
+    <!-- <script type="text" src="/script.js"></script> -->
 
     <script>
-        axios.get('https://symphonious-heliotrope-7b674a.netlify.app/getAllSubmitted')
+        axios.get('http://localhost:3000/getAllSubmitted')
             .then(function (response) {
                 // handle success
                 const allData = response.data
@@ -93,9 +93,7 @@
     <script type="text" src="dist/purify.min.js"></script>
 
 
-
     <!-- Bootstrap -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
