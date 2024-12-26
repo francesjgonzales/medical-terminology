@@ -2,7 +2,7 @@
  */
 
 
-axios.get('http://localhost:3000/getAllSubmitted')
+axios.get('https://symphonious-heliotrope-7b674a.netlify.app/getAllSubmitted')
     .then(function (response) {
         // handle success
         const allData = response.data
