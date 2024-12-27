@@ -951,6 +951,303 @@
       "common-roots": "bronch/o, bronchi/o",
       "definition": "bronchus",
       "example": "bronchitis: inflammation of a bronchus"
+    },
+    {
+      "id": "rb66",
+      "body-system": "Respiratory System",
+      "common-roots": "bronchiol/o",
+      "definition": "small bronchial tubes",
+      "example": "bronchiolitis: inflammation of the small bronchial tubes"
+    },
+    {
+      "id": "rb67",
+      "body-system": "Respiratory System",
+      "common-roots": "laryng/o",
+      "definition": "voice box, larynx",
+      "example": "laryngitis: inflammation of the voice box"
+    },
+    {
+      "id": "rb68",
+      "body-system": "Respiratory System",
+      "common-roots": "nas/o, rhin/o",
+      "definition": "nose",
+      "example": "rhinorrhea: discharge from the nose"
+    },
+    {
+      "id": "rb69",
+      "body-system": "Respiratory System",
+      "common-roots": "pharyng/o",
+      "definition": "throat, pharynx",
+      "example": "pharyngitis: inflammation of the throat"
+    },
+    {
+      "id": "rb70",
+      "body-system": "Respiratory System",
+      "common-roots": "pneum/o, pneumon/o, pulmon/o, pulm/o",
+      "definition": "lungs",
+      "example": "pulmonary: pertaining to the lungs"
+    },
+    {
+      "id": "rb71",
+      "body-system": "Respiratory System",
+      "common-roots": "thorac/o",
+      "definition": "chest",
+      "example": "thoracotomy: create opening into chest"
+    },
+    {
+      "id": "rb72",
+      "body-system": "Respiratory System",
+      "common-roots": "trache/o",
+      "definition": "windpipe, trachea",
+      "example": "tracheostomy: creation of a permanent opening in the windpipe"
+    },
+    {
+      "id": "rb73",
+      "body-system": "Male Reproductive System",
+      "common-roots": "andr/o",
+      "definition": "male",
+      "example": "android: male like"
+    },
+    {
+      "id": "rb74",
+      "body-system": "Male Reproductive System",
+      "common-roots": "balan/o",
+      "definition": "glans penis (tip of the penis)",
+      "example": "balanitis: inflammation of the glans penis"
+    },
+    {
+      "id": "rb75",
+      "body-system": "Male Reproductive System",
+      "common-roots": "epididym/o",
+      "definition": "epididymis",
+      "example": "epididymitis: inflammation of the epididymis"
+    },
+    {
+      "id": "rb76",
+      "body-system": "Male Reproductive System",
+      "common-roots": "orchid/o, orch/o, orchi/o",
+      "definition": "testes",
+      "example": "orchidectomy: removal of the testes"
+    },
+    {
+      "id": "rb77",
+      "body-system": "Male Reproductive System",
+      "common-roots": "phall/o",
+      "definition": "penis",
+      "example": "phallitis: inflammation of the penis"
+    },
+    {
+      "id": "rb78",
+      "body-system": "Male Reproductive System",
+      "common-roots": "prostat/o",
+      "definition": "prostate gland",
+      "example": "prostatectomy: surgical removal of the prostate gland"
+    },
+    {
+      "id": "rb79",
+      "body-system": "Male Reproductive System",
+      "common-roots": "test/o, testicul/o",
+      "definition": "testicle",
+      "example": "testicular: pertaining to the testicle"
+    },
+    {
+      "id": "rb80",
+      "body-system": "Male Reproductive System",
+      "common-roots": "vas/o",
+      "definition": "vas deferens, vessel, duct",
+      "example": "vasectomy: surgical removal of the vas deferens"
+    },
+    {
+      "id": "rb81",
+      "body-system": "Female Reproductive System",
+      "common-roots": "cervic/o",
+      "definition": "neck, uterus",
+      "example": "cervical: pertaining to the cervix"
+    },
+    {
+      "id": "rb82",
+      "body-system": "Female Reproductive System",
+      "common-roots": "colp/o, vagin/o",
+      "definition": "vagina",
+      "example": "colposcopy: examination of the vagina using a scope"
+    },
+    {
+      "id": "rb83",
+      "body-system": "Female Reproductive System",
+      "common-roots": "gynec/o",
+      "definition": "female",
+      "example": "gynecology: study of diseases of females"
+    },
+    {
+      "id": "rb84",
+      "body-system": "Female Reproductive System",
+      "common-roots": "mast/o, mamm/o",
+      "definition": "breast, mammary gland",
+      "example": "mastectomy: removal of a breast"
+    },
+    {
+      "id": "rb85",
+      "body-system": "Female Reproductive System",
+      "common-roots": "nat/i",
+      "definition": "birth",
+      "example": "prenatal: pertaining to before birth"
+    },
+    {
+      "id": "rb86",
+      "body-system": "Female Reproductive System",
+      "common-roots": "oophor/o, ovari/o",
+      "definition": "ovary",
+      "example": "ovarian: pertaining to an ovary"
+    },
+    {
+      "id": "rb87",
+      "body-system": "Female Reproductive System",
+      "common-roots": "salping/o",
+      "definition": "fallopian tubes",
+      "example": "salpingitis: inflammation of a fallopian tube"
+    },
+    {
+      "id": "rb88",
+      "body-system": "Female Reproductive System",
+      "common-roots": "uter/o, hyster/o, metr/o",
+      "definition": "uterus",
+      "example": "hysterectomy: surgical removal of the uterus"
+    },
+    {
+      "id": "rb89",
+      "body-system": "Female Reproductive System",
+      "common-roots": "vulv/o",
+      "definition": "vulva",
+      "example": "vulvitis: inflammation of the vulva"
+    },
+    {
+      "id": "rb90",
+      "body-system": "Body as a Whole",
+      "common-roots": "adip/o, lip/o, steat/o",
+      "definition": "fat, lipid",
+      "example": "lipoma: a tumor made up of fat cells"
+    },
+    {
+      "id": "rb91",
+      "body-system": "Body as a Whole",
+      "common-roots": "axill/o",
+      "definition": "armpit",
+      "example": "axillary: pertaining to the armpit"
+    },
+    {
+      "id": "rb92",
+      "body-system": "Body as a Whole",
+      "common-roots": "bi/o",
+      "definition": "pertaining to life",
+      "example": "biology: the stody of life"
+    },
+    {
+      "id": "rb93",
+      "body-system": "Body as a Whole",
+      "common-roots": "cephal/o",
+      "definition": "head",
+      "example": "cephalic: study of the cell"
+    },
+    {
+      "id": "rb94",
+      "body-system": "Body as a Whole",
+      "common-roots": "cyt/o",
+      "definition": "cell",
+      "example": "cytology: study of the cell"
+    },
+    {
+      "id": "rb95",
+      "body-system": "Body as a Whole",
+      "common-roots": "hist/o, histi/o",
+      "definition": "tissue",
+      "example": "histology: pertaining to the study of tissue"
+    },
+    {
+      "id": "rb96",
+      "body-system": "Body as a Whole",
+      "common-roots": "viscer/o",
+      "definition": "internal organs, viscera",
+      "example": "visceral: pertaining to internal organs"
+    }
+  ],
+  "suffixes-indicating-condition": [
+    {
+      "id": "sc1",
+      "suffix": "",
+      "definition": "",
+      "example": ""
+    },
+    {
+      "id": "sc1",
+      "suffix": "",
+      "definition": "",
+      "example": ""
+    },
+    {
+      "id": "sc1",
+      "suffix": "",
+      "definition": "",
+      "example": ""
+    },
+    {
+      "id": "sc1",
+      "suffix": "",
+      "definition": "",
+      "example": ""
+    },
+    {
+      "id": "sc1",
+      "suffix": "",
+      "definition": "",
+      "example": ""
+    },
+    {
+      "id": "sc1",
+      "suffix": "",
+      "definition": "",
+      "example": ""
+    },
+    {
+      "id": "sc1",
+      "suffix": "",
+      "definition": "",
+      "example": ""
+    },
+    {
+      "id": "sc1",
+      "suffix": "",
+      "definition": "",
+      "example": ""
+    },
+    {
+      "id": "sc1",
+      "suffix": "",
+      "definition": "",
+      "example": ""
+    },
+    {
+      "id": "sc1",
+      "suffix": "",
+      "definition": "",
+      "example": ""
+    },
+    {
+      "id": "sc1",
+      "suffix": "",
+      "definition": "",
+      "example": ""
+    },
+    {
+      "id": "sc1",
+      "suffix": "",
+      "definition": "",
+      "example": ""
+    },
+    {
+      "id": "sc1",
+      "suffix": "",
+      "definition": "",
+      "example": ""
     }
   ]
 }
