@@ -1,21 +1,18 @@
-require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10000;
 const cors = require('cors'); //cross browser
-
-
 
 // To connect index.html - to fix later when folders are organized in MVC
 const path = require('path')
-app.use(express.static(path.join(__dirname, '/public')));
 
 // Routes for Endpoints
 /* const routes = require('./routes/routes');
 app.use('/api', routes) */
 
 // Connect to MongoDB via Mongoose
+require('dotenv').config();
 const mongoString = process.env.DATABASE_URL
 
 mongoose.connect(mongoString)
@@ -109,7 +106,8 @@ app.post('/submit', (req, res) => {
         /* const allMedicalTerm = await medicalTerm.create(req.body); */
         /* res.status(200).json(newMedTerm) */
         /* res.send('Data submitted successfully') */
-        res.sendFile(__dirname + '/index.html')
+        res.redirect('/')
+
     } catch (error) {
         res.status(500)
         throw new Error(error.message)

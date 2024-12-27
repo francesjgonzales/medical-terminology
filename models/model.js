@@ -21,4 +21,3 @@ const medicalTermSchema = mongoose.Schema(
     }
 )
 
-module.exports = mongoose.model('term_no_root', medicalTermSchema)
