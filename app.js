@@ -109,8 +109,7 @@ app.post('/submit', (req, res) => {
         /* const allMedicalTerm = await medicalTerm.create(req.body); */
         /* res.status(200).json(newMedTerm) */
         /* res.send('Data submitted successfully') */
-        res.redirect('/')
-
+        res.sendFile(__dirname + '/index.html')
     } catch (error) {
         res.status(500)
         throw new Error(error.message)
