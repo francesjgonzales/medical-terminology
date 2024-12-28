@@ -39,6 +39,7 @@
     Solution: Check mongoose connection. Check dotenv import is correct.
 2.  Message: fatal: the remote end hung up unexpectedly
     Solution: `git config http.postBuffer 524288000`
+3.  Message: localhost:10000/getAllSubmitted:1Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
 
 ### Resources:
 
