@@ -6,7 +6,7 @@ const Model = require('../models/model');
 /* const { getAllMedicalTerm } = require('../controller/medicalTermController'); */
 
 //Post Method
-router.post('/submit', (req, res) => {
+router.post('/', (req, res) => {
     res.send(req.body)
 })
 

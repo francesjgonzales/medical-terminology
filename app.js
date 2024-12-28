@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
@@ -12,7 +13,6 @@ const path = require('path')
 app.use('/api', routes) */
 
 // Connect to MongoDB via Mongoose
-require('dotenv').config();
 const mongoString = process.env.DATABASE_URL
 
 mongoose.connect(mongoString)
@@ -62,10 +62,13 @@ app.get('/getAll/:id', async (req, res) => {
 app.get('/getAllSubmitted', async (req, res) => {
     try {
         const allSubmittedMedicalTerm = await newData.find({});
+        console.log(allSubmittedMedicalTerm);
         res.status(200).json(allSubmittedMedicalTerm);
     } catch (error) {
         res.status(500)
+
         throw new Error(error.message)
+
     }
 })
 
@@ -73,7 +76,7 @@ const newMedTerm = new mongoose.Schema(
     {
         term: {
             type: String,
-            unique: true
+            unique: true,
         },
         definition: {
             type: String
@@ -94,7 +97,19 @@ const newData = mongoose.model('submitted_form', newMedTerm)
 const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.post('/submit', (req, res) => {
+
+// Middleware to validate term length
+function validateTerm(req, res, next) {
+    const { term, definition, category } = req.body;
+    if (term.length < 4) {
+        return res.status(400).json({ message: "Medical Term must be at least 4 characters long." });
+    } else if (definition.length < 4) {
+        return res.status(400).json({ message: "Definition must be at least 4 characters long." });
+    }
+    next();
+}
+
+app.post('/', validateTerm, (req, res) => {
     try {
         const { term, definition, category } = req.body;
         const newMedTerm = newData({
