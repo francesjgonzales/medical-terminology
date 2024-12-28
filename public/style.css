@@ -1,0 +1,168 @@
+/* Global CSS */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+/* START Main container */
+body {
+  background-color: #1a2026;
+  background-image: url("../img/100yearslogo-bg.png");
+  background-repeat: repeat;
+  height: auto;
+}
+
+/* END Main container */
+
+/* START navbar */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/* END navbar */
+
+/* START carousel */
+/* .carousel-bg {
+  background-color: #1a2026;
+  background-image: url("../img/100yearslogo-bg.png");
+  background-repeat: repeat;
+  height: auto;
+} */
+
+.carousel-control-prev {
+  background-image: linear-gradient(
+    to left,
+    rgba(26, 32, 38, 0),
+    rgba(26, 32, 38)
+  );
+}
+
+.carousel-control-next {
+  background-image: linear-gradient(
+    to right,
+    rgba(26, 32, 38, 0),
+    rgba(26, 32, 38)
+  );
+}
+/* END carousel */
+
+/* START article */
+/* #about-nursing {
+  background-color: #edf5e0;
+} */
+
+.text-truncated {
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+}
+
+hr.rounded {
+  border-top: 8px solid #11b51c;
+  border-radius: 5px;
+}
+
+.card {
+  border-color: #3e8e41 !important;
+}
+/* END article */
+
+/* START Container */
+.container {
+  border-radius: 15px;
+}
+/* END Container */
+
+/* START Hyperlinks */
+.nav-text-links {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/* START All media queries */
+
+/* largest and up screens */
+@media (max-width: 1920px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:nth-child(-n + 2) {
+    display: block;
+  }
+  /* .vertical-line {
+    border-left: 2px solid green;
+    height: 790vh;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+  } */
+  /* .container {
+    max-width: 1200px !important;
+  } */
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item > div {
+    display: inline-block;
+  }
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  /* navbar */
+  .navbar {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* .container {
+    max-width: 650px !important;
+  } */
+  /* END media queries */
+}
+
+.img-thumbnail {
+  width: 130vw;
+  cursor: pointer;
+}
+
+.timeline-card,
+.video-card {
+  width: 20rem;
+}
+
+.video-img {
+  position: relative;
+  width: 100%;
+}

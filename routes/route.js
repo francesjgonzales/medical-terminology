@@ -1,9 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-// Import Model
-const Model = require('../models/model');
-/* const { getAllMedicalTerm } = require('../controller/medicalTermController'); */
+// Import Controller
+const { getAllMedicalTerm } = require('../controller/medicalTermController');
 
 //Post Method
 router.post('/', (req, res) => {
@@ -11,7 +10,7 @@ router.post('/', (req, res) => {
 })
 
 //Get all Method
-/* router.get('/getAll', getAllMedicalTerm) */
+router.get('/', getAllMedicalTerm)
 
 
 

@@ -1,23 +1,25 @@
 const mongoose = require('mongoose');
 
-const medicalTermSchema = mongoose.Schema(
+// POST - Created Mongoose model
+const newMedTerm = new mongoose.Schema(
     {
-        id: {
-            required: true,
-            type: String
-        },
         term: {
-            required: true,
-            type: String
+            type: String,
+            unique: true,
         },
         definition: {
-            required: true,
             type: String
         },
         image: {
-            required: false,
             type: String
         },
+        category: {
+            type: String,
+            enum: ['Term with no root', 'Term with no prefix'],
+        }
     }
 )
 
+const newData = mongoose.model('submitted_form', newMedTerm)
+
+module.exports = newData;

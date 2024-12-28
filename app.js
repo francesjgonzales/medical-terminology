@@ -12,6 +12,10 @@ const path = require('path')
 /* const routes = require('./routes/routes');
 app.use('/api', routes) */
 
+// Mongoose database - Refer to controller folder for Application-level middleware that contains CRUD logic
+const getAllMedicalTerm = require('./routes/route')
+app.use('/getAllSubmitted', getAllMedicalTerm)
+
 // Connect to MongoDB via Mongoose
 const mongoString = process.env.DATABASE_URL
 
@@ -26,53 +30,45 @@ mongooseDatabase.once('connected', () => {
 
 // Middleware to parse JSON bodies
 app.use(express.json());
-const medicalTerm = require('./models/model')
+const newData = require('./models/model')
 
 app.use(cors());
 
-// CRUD 1 - Main page
+// Define template paths
+const viewsPath = path.join(__dirname, '/templates/views')
+const partialsPath = path.join(__dirname, '/templates/partials')
+const publicPath = path.join(__dirname, '/public')
+
+// hbs template engine set up
+const hbs = require('hbs')
+app.set('view engine', 'hbs')
+app.set('views', viewsPath)
+hbs.registerPartials(partialsPath)
+
+// Set up static directory
+app.use(express.static(publicPath))
+
+
+// Main page
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html')
-})
-
-// CRUD 1 - Read all data using GET response
-app.get('/getAll', async (req, res) => {
-    try {
-        const allMedicalTerm = await medicalTerm.find({});
-        res.status(200).json(allMedicalTerm);
-    } catch (error) {
-        res.status(500)
-        throw new Error(error.message)
-    }
-})
-
-// CRUD 2 - Read one data using GET response
-app.get('/getAll/:id', async (req, res) => {
-    try {
-        const { id } = req.params;
-        const oneMedicalTerm = await medicalTerm.findById(id);
-        res.status(200).json(oneMedicalTerm);
-    } catch (error) {
-        res.status(500)
-        throw new Error(error.message)
-    }
+    res.render('index')
+    /* res.sendFile(__dirname + '/index.html') */
 })
 
 // CRUD 1 - Read all submitted data using GET response
-app.get('/getAllSubmitted', async (req, res) => {
+/* app.get('/getAllSubmitted', async (req, res) => {
     try {
         const allSubmittedMedicalTerm = await newData.find({});
         console.log(allSubmittedMedicalTerm);
         res.status(200).json(allSubmittedMedicalTerm);
     } catch (error) {
         res.status(500)
-
         throw new Error(error.message)
-
     }
-})
+}) */
 
-const newMedTerm = new mongoose.Schema(
+// POST - Created Mongoose model
+/* const newMedTerm = new mongoose.Schema(
     {
         term: {
             type: String,
@@ -91,16 +87,15 @@ const newMedTerm = new mongoose.Schema(
     }
 )
 
-const newData = mongoose.model('submitted_form', newMedTerm)
+const newData = mongoose.model('submitted_form', newMedTerm) */
 
-/* Nodejs middleware - JSON body parser */
+/* For DATABASE - used Nodejs middleware, JSON body parser */
 const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 
-
-// Middleware to validate term length
+// POST - Middleware to validate term length
 function validateTerm(req, res, next) {
-    const { term, definition, category } = req.body;
+    const { term, definition } = req.body;
     if (term.length < 4) {
         return res.status(400).json({ message: "Medical Term must be at least 4 characters long." });
     } else if (definition.length < 4) {
@@ -109,6 +104,7 @@ function validateTerm(req, res, next) {
     next();
 }
 
+// POST Router where data is redirected to main page
 app.post('/', validateTerm, (req, res) => {
     try {
         const { term, definition, category } = req.body;
@@ -129,26 +125,26 @@ app.post('/', validateTerm, (req, res) => {
     }
 })
 
-/* app.post('/post', async (req, res) => {
+// CRUD 2 - Read one data using GET response
+app.get('/getAll/:id', async (req, res) => {
     try {
-        const allMedicalTerm = await medicalTerm.create(req.body);
-        res.status(200).json(allMedicalTerm)
-
+        const { id } = req.params;
+        const oneMedicalTerm = await newMedTerm.findById(id);
+        res.status(200).json(oneMedicalTerm);
     } catch (error) {
         res.status(500)
         throw new Error(error.message)
     }
 })
- */
 
 app.put('/update/:id', async (req, res) => {
     try {
         const { id } = req.params;
-        const allMedicalTerm = await medicalTerm.findByIdAndUpdate(id, req.body)
+        const allMedicalTerm = await newData.findByIdAndUpdate(id, req.body);
         if (!allMedicalTerm) {
             return res.status(404).json({ message: `cant find term` })
         }
-        const editMedicalTerm = await medicalTerm.findById(id, req.body)
+        const editMedicalTerm = await newData.findById(id, req.body)
         res.status(200).json(editMedicalTerm)
 
     } catch (error) {
@@ -161,7 +157,7 @@ app.put('/update/:id', async (req, res) => {
 app.delete('/delete/:id', async (req, res) => {
     try {
         const { id } = req.params;
-        const allMedicalTerm = await medicalTerm.findByIdAndDelete(id)
+        const allMedicalTerm = await allSubmittedMedicalTerm.findByIdAndDelete(id)
         if (!allMedicalTerm) {
             return res.status(404).json({ message: `cant find term` })
         }
@@ -182,3 +178,14 @@ app.listen(port, () => {
 });
 
 
+/* app.post('/post', async (req, res) => {
+    try {
+        const allMedicalTerm = await medicalTerm.create(req.body);
+        res.status(200).json(allMedicalTerm)
+
+    } catch (error) {
+        res.status(500)
+        throw new Error(error.message)
+    }
+})
+ */
