@@ -1,4 +1,4 @@
-axios.get('http://localhost:10000/getAllSubmitted')
+axios.get('https://medical-terminology.onrender.com/getAllSubmitted')
     .then(function (response) {
         // handle success
         const allData = response.data
