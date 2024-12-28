@@ -33,6 +33,11 @@
 3. Use DOM manipulation to show the data in the front-end.
 4. Useful Javascript array methods are filter() to create a new array based on multiple arrays of document, map() to create a new set of array that calls out a function that provides each element in an array.
 
+## Deployment
+
+1. Back-end Mongoose API deployed in Render
+2. Front-end deployed in Netlify
+
 ### Errors:
 
 1.  Message: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
