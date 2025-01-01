@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
-const mongoose = require('mongoose');
+const connectMongoose = require('./server/config/mongoose')
+
 const app = express();
 const port = process.env.PORT || 10000;
 const cors = require('cors'); //cross browser
@@ -13,24 +14,21 @@ const path = require('path')
 app.use('/api', routes) */
 
 // Mongoose database - Refer to controller folder for Application-level middleware that contains CRUD logic
-const getAllMedicalTerm = require('./routes/route')
+const getAllMedicalTerm = require('./server/routes/route')
 app.use('/getAllSubmitted', getAllMedicalTerm)
 
-// Connect to MongoDB via Mongoose
-const mongoString = process.env.DATABASE_URL
+const getOneMedicalTerm = require('./server/routes/route')
+app.use('/getOne/:id', getOneMedicalTerm)
 
-mongoose.connect(mongoString)
-const mongooseDatabase = mongoose.connection
-mongooseDatabase.on('error', error => {
-    console.log(error)
-})
-mongooseDatabase.once('connected', () => {
-    console.log('Database connected')
-})
+const updateOneMedicalTerm = require('./server/routes/route')
+app.use('/update/:id', updateOneMedicalTerm)
+
+// Connect to Mongoose
+connectMongoose();
 
 // Middleware to parse JSON bodies
 app.use(express.json());
-const newData = require('./models/model')
+const newData = require('./server/models/model')
 
 app.use(cors());
 
@@ -54,40 +52,6 @@ app.get('/', (req, res) => {
     res.render('index')
     /* res.sendFile(__dirname + '/index.html') */
 })
-
-// CRUD 1 - Read all submitted data using GET response
-/* app.get('/getAllSubmitted', async (req, res) => {
-    try {
-        const allSubmittedMedicalTerm = await newData.find({});
-        console.log(allSubmittedMedicalTerm);
-        res.status(200).json(allSubmittedMedicalTerm);
-    } catch (error) {
-        res.status(500)
-        throw new Error(error.message)
-    }
-}) */
-
-// POST - Created Mongoose model
-/* const newMedTerm = new mongoose.Schema(
-    {
-        term: {
-            type: String,
-            unique: true,
-        },
-        definition: {
-            type: String
-        },
-        image: {
-            type: String
-        },
-        category: {
-            type: String,
-            enum: ['Term with no root', 'Term with no prefix'],
-        }
-    }
-)
-
-const newData = mongoose.model('submitted_form', newMedTerm) */
 
 /* For DATABASE - used Nodejs middleware, JSON body parser */
 const bodyParser = require('body-parser')
@@ -126,10 +90,9 @@ app.post('/', validateTerm, (req, res) => {
 })
 
 // CRUD 2 - Read one data using GET response
-app.get('/getAll/:id', async (req, res) => {
+app.get('/getOne/:id', async (req, res) => {
     try {
-        const { id } = req.params;
-        const oneMedicalTerm = await newMedTerm.findById(id);
+        const oneMedicalTerm = await newData.findById(req.params.id);
         res.status(200).json(oneMedicalTerm);
     } catch (error) {
         res.status(500)
@@ -139,35 +102,30 @@ app.get('/getAll/:id', async (req, res) => {
 
 app.put('/update/:id', async (req, res) => {
     try {
-        const { id } = req.params;
-        const allMedicalTerm = await newData.findByIdAndUpdate(id, req.body);
-        if (!allMedicalTerm) {
+        const updateMedicalTerm = await newData.findByIdAndUpdate(req.params.id);
+        if (!updateMedicalTerm) {
             return res.status(404).json({ message: `cant find term` })
         }
-        const editMedicalTerm = await newData.findById(id, req.body)
-        res.status(200).json(editMedicalTerm)
-
+        /* const editMedicalTerm = await newData.findById(req.params.id) */
+        res.status(200).json(updateMedicalTerm)
     } catch (error) {
         res.status(500)
         throw new Error(error.message)
     }
-
 })
 
 app.delete('/delete/:id', async (req, res) => {
     try {
-        const { id } = req.params;
-        const allMedicalTerm = await allSubmittedMedicalTerm.findByIdAndDelete(id)
+        const allMedicalTerm = await newData.findByIdAndDelete(req.params.id)
         if (!allMedicalTerm) {
             return res.status(404).json({ message: `cant find term` })
         }
-        res.status(200).json(allMedicalTerm)
-
+        const editMedicalTerm = await newData.findByIdAndDelete(req.params.id)
+        res.status(200).json(editMedicalTerm)
     } catch (error) {
         res.status(500)
         throw new Error(error.message)
     }
-
 })
 
 
@@ -177,15 +135,3 @@ app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
 
-
-/* app.post('/post', async (req, res) => {
-    try {
-        const allMedicalTerm = await medicalTerm.create(req.body);
-        res.status(200).json(allMedicalTerm)
-
-    } catch (error) {
-        res.status(500)
-        throw new Error(error.message)
-    }
-})
- */

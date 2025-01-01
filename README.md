@@ -2,16 +2,33 @@
 
 ## Building REST API using Node.js, Express, and MongoDB (Mongoose)
 
+## Directory Structure:
+
+medical-terminology/
+├── server/
+│ ├── config/
+│ │ └── mongoose.js
+│ ├── controller/
+│ │ └── medicalTermController.js
+│ ├── routes/
+│ │ └── route.js
+├── views/
+│ └── index.ejs
+├── public/
+│ └── script.js
+│ └── style.css
+├── app.js
+├── package.json
+
 ## Starting the project
 
-1. initialize a package `npm init -y`
-2. install dependencies
+1. Install dependencies
    a. axios for API: `npm install axios`
    b. Express.js: Install the Express framework, which simplifies API development `npm install express`
    c. mongoose: database storage
    d. dotenv: to store sensitive information
    e. nodemon: it restarts the server whenever a file is saved.
-3. To run the app, use command:
+2. To run the app, use command:
    `nodemon app.js` or `npm start` if starter script is available in package.json file
 
 ## Back end: Connect to Mongoose by MongoDB
@@ -40,6 +57,7 @@
 2.  Message: fatal: the remote end hung up unexpectedly
     Solution: `git config http.postBuffer 524288000`
 3.  Message: localhost:10000/getAllSubmitted:1Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+    Solution: update API endpoint to production server
 
 ### Resources:
 

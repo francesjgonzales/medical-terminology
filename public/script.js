@@ -1,11 +1,12 @@
-axios.get('https://medical-terminology.onrender.com/getAllSubmitted')
+axios.get('http://localhost:10000/getAllSubmitted')
     .then(function (response) {
         // handle success
         const allData = response.data
         console.log(allData);
 
         let allMedicalTerm = allData.map((medData) => {
-            return `<tr><td>${medData.term}</td> <td> ${medData.definition}</td> <td>${medData.category}</td></tr> `
+            return `<tr><td>${medData.term}</td> <td> ${medData.definition}</td> <td>${medData.category}</td>  
+            <td><i class="bi bi-pencil-fill"></i></td> <td><i class="bi bi-trash3-fill"></i></td></tr>`
         }).join("");
         document.querySelector("#showData").innerHTML = allMedicalTerm
     })
