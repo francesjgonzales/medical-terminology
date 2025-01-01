@@ -53,11 +53,20 @@ medical-terminology/
 ### Errors:
 
 1.  Message: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+
     Solution: Check mongoose connection. Check dotenv import is correct.
+
 2.  Message: fatal: the remote end hung up unexpectedly
+
     Solution: `git config http.postBuffer 524288000`
+
 3.  Message: localhost:10000/getAllSubmitted:1Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+
     Solution: update API endpoint to production server
+
+4.  Message: Error [ERR_HTTP_HEADERS_SENT]
+
+    Solution
 
 ### Resources:
 

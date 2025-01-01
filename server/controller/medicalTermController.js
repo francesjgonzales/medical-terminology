@@ -2,10 +2,15 @@ const newData = require('../models/model')
 const mongoose = require('mongoose')
 
 const getAllMedicalTerm = async (req, res) => {
+    const headers = {
+        title: 'Medical Terminology',
+        description: 'For educational purpose only'
+    }
     try {
         const medicalNewData = await newData.find({});
-        res.status(200).json(medicalNewData);
-        res.render('index', medicalNewData)
+        /* res.status(200).json(medicalNewData); */
+        res.render('index', { headers, medicalNewData })
+
     } catch (error) {
         res.status(500)
         throw new Error(error.message)
