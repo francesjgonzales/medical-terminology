@@ -41,13 +41,20 @@
                 <th scope="col">Category</th>
             </tr>
         </thead>
-        <tbody id="showData">
-            <%= medicalNewData.term %>
+        <tbody id="">
+            <% for( let index=0; index < medicalData.length; index++ ) { %>
+                <tr>
+                    <td>
+                        <%= medicalData[index].term %>
+                    </td>
+                    <td>
+                        <%= medicalData[index].definition %>
+                    </td>
+                    <td>
+                        <%= medicalData[index].category %>
+                    </td>
+                </tr>
+                <% } %>
         </tbody>
-
-
     </table>
-
-
-
 </section>

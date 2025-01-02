@@ -11,7 +11,7 @@ router.post('/', (req, res) => {
 //Get all Method
 router.get('/', medicalController.getAllMedicalTerm)
 
-router.get('/getOne/:id', medicalController.getOneMedicalTerm)
+/* router.get('/getOne/:id', medicalController.getOneMedicalTerm)
 
 router.post('/update/:id', medicalController.updateOneMedicalTerm)
 
@@ -19,5 +19,5 @@ router.post('/update/:id', medicalController.updateOneMedicalTerm)
 router.delete('/delete/:id', (req, res) => {
     res.send('Delete by ID API')
 })
-
+ */
 module.exports = router;

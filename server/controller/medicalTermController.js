@@ -1,4 +1,4 @@
-const newData = require('../models/model')
+const newMedTerm = require('../models/model')
 const mongoose = require('mongoose')
 
 const getAllMedicalTerm = async (req, res) => {
@@ -7,9 +7,9 @@ const getAllMedicalTerm = async (req, res) => {
         description: 'For educational purpose only'
     }
     try {
-        const medicalNewData = await newData.find({});
+        const medicalData = await newMedTerm.find({});
         /* res.status(200).json(medicalNewData); */
-        res.render('index', { headers, medicalNewData })
+        res.render('index', { headers, medicalData })
 
     } catch (error) {
         res.status(500)
@@ -17,7 +17,7 @@ const getAllMedicalTerm = async (req, res) => {
     }
 }
 
-const getOneMedicalTerm = async (req, res) => {
+/* const getOneMedicalTerm = async (req, res) => {
     try {
         const { id } = req.params;
         const getOneMedTerm = await newData.findById(id);
@@ -39,11 +39,9 @@ const updateOneMedicalTerm = async (req, res) => {
         res.status(500)
         throw new Error(error.message)
     }
-}
+} */
 
 module.exports = {
-    getAllMedicalTerm,
-    getOneMedicalTerm,
-    updateOneMedicalTerm
-};
+    getAllMedicalTerm
+}
 

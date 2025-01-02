@@ -19,6 +19,6 @@ const newMedTerm = mongoose.Schema(
     }
 )
 
-const newData = mongoose.model('submitted_form', newMedTerm)
 
-module.exports = newData;
+
+module.exports = mongoose.model('submitted_form', newMedTerm)
