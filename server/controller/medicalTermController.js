@@ -8,7 +8,6 @@ const getAllMedicalTerm = async (req, res) => {
     }
     try {
         const medicalData = await newMedTerm.find({});
-        /* res.status(200).json(medicalNewData); */
         res.render('index', { headers, medicalData })
 
     } catch (error) {
@@ -17,7 +16,19 @@ const getAllMedicalTerm = async (req, res) => {
     }
 }
 
-/* const getOneMedicalTerm = async (req, res) => {
+const addMedicalTerm = async (req, res) => {
+    const headers = {
+        title: 'Medical Terminology',
+        description: 'For educational purpose only'
+    }
+    res.render('medical/add', headers)
+}
+
+const getOneMedicalTerm = async (req, res) => {
+    const headers = {
+        title: 'Medical Terminology',
+        description: 'For educational purpose only'
+    }
     try {
         const { id } = req.params;
         const getOneMedTerm = await newData.findById(id);
@@ -28,20 +39,26 @@ const getAllMedicalTerm = async (req, res) => {
     }
 }
 
-const updateOneMedicalTerm = async (req, res) => {
+const postMedicalTerm = async (req, res) => {
+    console.log(req.body)
+
+    const addMedicalTerm = new newMedTerm({
+        term: req.body.term,
+        definition: req.body.definition,
+        category: req.body.category
+    })
     try {
-        const updateOneMedTerm = await newData.findByIdAndUpdate(req.params.id, {
-            term: req.body.term,
-            description: req.body.description,
-        },
-            res.status(200).json(updateOneMedTerm))
+        addMedicalTerm.save();
+        /* await newMedTerm.create(addMedicalTerm); */
+        res.redirect('/')
     } catch (error) {
         res.status(500)
+        console.log(error)
         throw new Error(error.message)
     }
-} */
+}
 
 module.exports = {
-    getAllMedicalTerm
+    getAllMedicalTerm, addMedicalTerm, postMedicalTerm
 }
 

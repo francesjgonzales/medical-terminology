@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // POST - Created Mongoose model
-const newMedTerm = mongoose.Schema(
+const newMedTerm = new mongoose.Schema(
     {
         term: {
             type: String,

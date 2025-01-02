@@ -1,38 +1,8 @@
 <section class="container-sm mt-5">
-    <p>HBS TEMPLATE</p>
-    <h1>Add your term</h1>
-    <form method="post" id="myForm" action="/" class="form">
-        <div class="mb-3">
-            <label>Medical Term</label>
-            <input name="term" id="term" type="text" class="form-control" required />
-            <div class="valid-feedback">
-                This word exists in the Medical Term
-            </div>
-        </div>
-        <div class="mb-3">
-            <label>Description</label>
-            <input name="definition" id="definition" type="text" class="form-control" required />
-        </div>
-        <div class="mb-3">
-
-            <!-- <input name="category" id="category" type="text" class="form-control"> -->
-
-            <select name="category" id="category" type="text" class="form-select" required>
-                <option selected>Add the category</option>
-                <option value="Term with no root">Terms with no root</option>
-                <option value="Term with no prefix">Terms with no prefix</option>
-            </select>
-
-        </div>
-        <div class="mb-3">
-            <button type="reset" class="btn btn-primary">Cancel</button>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </form>
-</section>
-<section class="container-sm mt-5">
     <h1>Medical Terminology</h1>
-
+    <div class="btn-group me-2">
+        <a href="/add" class="btn btn-sm btn-outline-primary">+ Add Term</a>
+    </div>
     <table class="table">
         <thead>
             <tr>
@@ -52,6 +22,10 @@
                     </td>
                     <td>
                         <%= medicalData[index].category %>
+                    </td>
+                    <td>
+                        <a href=""><i class="bi bi-pen"></i></a>
+                        <a href=""><i class="bi bi-x-circle"></i></a>
                     </td>
                 </tr>
                 <% } %>
