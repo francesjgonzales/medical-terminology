@@ -1,1 +1,27 @@
-<p>view.hbs</p>
+<section class="container-sm mt-5">
+    <h1>View <%= medicalData.term %>
+    </h1>
+
+    <div class="mb-3">
+        <label>Medical Term:</label>
+        <%= medicalData.term %>
+            <div class="valid-feedback">
+                This word exists in the Medical Term
+            </div>
+    </div>
+    <div class="mb-3">
+        <label>Description:</label>
+        <%= medicalData.definition %>
+    </div>
+    <div class="mb-3">
+        <div>
+            <%= medicalData.category%>
+        </div>
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Update Term</button>
+        <button type="submit" class="btn btn-danger" data-bs-toggle="modal" id="deleteButton"
+            data-bs-target="#deleteModal">Delete</button>
+    </div>
+
+</section>

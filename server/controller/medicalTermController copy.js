@@ -1,7 +1,7 @@
 const newMedTerm = require('../models/model')
 const mongoose = require('mongoose')
 
-exports.getAllMedicalTerm = async (req, res) => {
+const getAllMedicalTerm = async (req, res) => {
     try {
         const headers = {
             title: 'Medical Terminology',
@@ -16,15 +16,14 @@ exports.getAllMedicalTerm = async (req, res) => {
     }
 }
 
-exports.addMedicalTerm = async (req, res) => {
+const addMedicalTerm = async (req, res) => {
     const headers = {
         title: 'Medical Terminology',
         description: 'For educational purpose only'
     }
     res.render('medical/add', headers)
 }
-
-exports.test = async (req, res) => {
+const test = async (req, res) => {
     const headers = {
         title: 'Medical Terminology',
         description: 'For educational purpose only'
@@ -40,7 +39,7 @@ exports.test = async (req, res) => {
 }
 
 // GET to edit
-exports.editMedicalTerm = async (req, res) => {
+const editMedicalTerm = async (req, res) => {
     try {
         const headers = {
             title: 'Medical Terminology',
@@ -54,33 +53,37 @@ exports.editMedicalTerm = async (req, res) => {
     }
 }
 
-exports.editPostMedicalTerm = async (req, res) => {
-    console.log(req.body);
+const editPostMedTerm = async (req, res) => {
+
     // edit the Mongoose data
     try {
         await newMedTerm.findByIdAndUpdate(req.params.id, {
             term: req.body.term,
             definition: req.body.definition,
         });
-        await res.redirect('/')
+        await res.redirect(`/edit/${req.params.id}`)
     } catch (error) {
         res.status(500)
         throw new Error(error.message)
     }
 }
 
-exports.viewOneMedicalTerm = async (req, res) => {
+const viewOneMedicalTerm = async (req, res) => {
+    const headers = {
+        title: 'Medical Terminology',
+        description: 'For educational purpose only'
+    }
     try {
-        const medicalData = await newMedTerm.findOne({ _id: req.params.id })
-        res.render('medical/view', { medicalData })
-
+        const { id } = req.params;
+        await newMedTerm.findById(id);
+        res.render('medical/view')
     } catch (error) {
         res.status(500)
         throw new Error(error.message)
     }
 }
 
-exports.postMedicalTerm = async (req, res) => {
+const postMedicalTerm = async (req, res) => {
     console.log(req.body)
 
     const addMedicalTerm = new newMedTerm({
@@ -100,7 +103,7 @@ exports.postMedicalTerm = async (req, res) => {
 }
 
 // Delete Customer
-exports.deleteMedicalTerm = async (req, res) => {
+const deleteMedicalTerm = async (req, res) => {
     try {
         const deleteTerm = await newMedTerm.findByIdAndDelete(req.params.id);
         res.redirect('/');
@@ -109,4 +112,7 @@ exports.deleteMedicalTerm = async (req, res) => {
     }
 }
 
+module.exports = {
+    test, getAllMedicalTerm, viewOneMedicalTerm, addMedicalTerm, postMedicalTerm, editMedicalTerm, editPostMedTerm, deleteMedicalTerm
+}
 
