@@ -4,21 +4,31 @@
 
 ## Directory Structure:
 
+```
 medical-terminology/
+│
 ├── server/
-│ ├── config/
-│ │ └── mongoose.js
-│ ├── controller/
-│ │ └── medicalTermController.js
-│ ├── routes/
-│ │ └── route.js
+│   │
+│   ├── config/
+│   │   └── mongoose.js
+│   ├── controller/
+│   │   └── medicalTermController.js
+│   ├── routes/
+│   │   └── route.js
+│
 ├── views/
-│ └── index.ejs
+│   └── layouts
+│   └── index.ejs
+│
 ├── public/
-│ └── script.js
-│ └── style.css
+│   └── script.js
+│   └── style.css
+│
 ├── app.js
+│
 ├── package.json
+
+```
 
 ## Starting the project
 
@@ -79,3 +89,11 @@ https://dev.to/kodebae/how-to-remove-a-leaked-env-file-from-github-permanently-3
 [dummyjson](https://dummyjson.com/)
 [Build Restful CRUD API with Node.js, Express and MongoDB by Devtamin](https://www.youtube.com/watch?v=9OfL9H6AmhQ)
 [Store html form data in MongoDb using Nodejs and express](https://www.youtube.com/watch?v=YD5iOPCO9z8)
+
+### Credits:
+
+Learned the CRUD from [RaddyTheBrand](https://github.com/RaddyTheBrand)
+
+```
+
+```
