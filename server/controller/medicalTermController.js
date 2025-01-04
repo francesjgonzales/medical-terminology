@@ -2,13 +2,14 @@ const newMedTerm = require('../models/model')
 const mongoose = require('mongoose')
 
 exports.getAllMedicalTerm = async (req, res) => {
+    const message = await req.flash('info')
     try {
         const headers = {
             title: 'Medical Terminology',
             description: 'For educational purpose only'
         }
         const medicalData = await newMedTerm.find({});
-        res.render('index', { headers, medicalData })
+        res.render('index', { headers, medicalData, message })
 
     } catch (error) {
         res.status(500)
@@ -22,21 +23,6 @@ exports.addMedicalTerm = async (req, res) => {
         description: 'For educational purpose only'
     }
     res.render('medical/add', headers)
-}
-
-exports.test = async (req, res) => {
-    const headers = {
-        title: 'Medical Terminology',
-        description: 'For educational purpose only'
-    }
-    try {
-        const medicalDataa = await newMedTerm.find({});
-        console.log(medicalDataa)
-        res.render('medical/test', medicalDataa)
-    } catch (error) {
-        res.status(500)
-        throw new Error(error.message)
-    }
 }
 
 // GET to edit
@@ -55,14 +41,16 @@ exports.editMedicalTerm = async (req, res) => {
 }
 
 exports.editPostMedicalTerm = async (req, res) => {
-    console.log(req.body);
     // edit the Mongoose data
     try {
         await newMedTerm.findByIdAndUpdate(req.params.id, {
             term: req.body.term,
             definition: req.body.definition,
+            category: req.body.category,
         });
+        /*         await req.flash('info', 'Term edited') */
         await res.redirect('/')
+
     } catch (error) {
         res.status(500)
         throw new Error(error.message)
@@ -81,16 +69,15 @@ exports.viewOneMedicalTerm = async (req, res) => {
 }
 
 exports.postMedicalTerm = async (req, res) => {
-    console.log(req.body)
 
     const addMedicalTerm = new newMedTerm({
         term: req.body.term,
         definition: req.body.definition,
-        category: req.body.category
+        category: req.body.category,
     })
     try {
         addMedicalTerm.save();
-        /* await newMedTerm.create(addMedicalTerm); */
+        /* await req.flash('info', 'New customer added') */
         res.redirect('/')
     } catch (error) {
         res.status(500)
@@ -102,7 +89,8 @@ exports.postMedicalTerm = async (req, res) => {
 // Delete Customer
 exports.deleteMedicalTerm = async (req, res) => {
     try {
-        const deleteTerm = await newMedTerm.findByIdAndDelete(req.params.id);
+        await newMedTerm.deleteOne({ _id: req.params.id });
+        /* await req.flash('info', 'Deleted customer') */
         res.redirect('/');
     } catch (error) {
         console.log(error);
@@ -110,3 +98,22 @@ exports.deleteMedicalTerm = async (req, res) => {
 }
 
 
+// Get Customer
+// Search Customer Data
+exports.searchMedData = async (req, res) => {
+    try {
+        let searchTerm = req.body.searchTerm;
+        const searchNoSpecialChar = searchTerm.replace(/[^a-zA-Z0-9 ]/g, "");
+
+        const medWords = await newMedTerm.find({
+            $or: [
+                { term: { $regex: new RegExp(searchNoSpecialChar, "i") } },
+                { definition: { $regex: new RegExp(searchNoSpecialChar, "i") } },
+                { category: { $regex: new RegExp(searchNoSpecialChar, "i") } },
+            ],
+        });
+        res.render("search", { medWords });
+    } catch (error) {
+        console.log(error);
+    }
+}

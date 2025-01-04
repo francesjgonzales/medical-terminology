@@ -1,0 +1,65 @@
+<section class="container-sm mt-5">
+    <h1>Medical Terminology</h1>
+    <div class="btn-group me-2">
+        <a href="/add" class="btn btn-sm btn-outline-primary">+ Add Term</a>
+    </div>
+
+    <div class="container mt-5">
+        <form class="nav col-12 col-md-auto flex-fill mb-2 justify-content-center mb-md-0" role="search" method="POST"
+            action="/search">
+            <input type="search" name="searchTerm" class="form-control form-control-dark w-100 rounded-0 border-0"
+                placeholder="Search..." aria-label="Search">
+        </form>
+    </div>
+
+    <div class="mt-5">
+        <% if (medWords !="" ) { %>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Term</th>
+                        <th scope="col">Definition</th>
+                        <th scope="col">Category</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="">
+                    <% for( let index=0; index < medWords.length; index++ ) { %>
+                        <tr>
+                            <td>
+                                <%= medWords[index].term %>
+                            </td>
+                            <td>
+                                <%= medWords[index].definition %>
+                            </td>
+                            <td>
+                                <%= medWords[index].category %>
+                            </td>
+                            <td>
+                                <button class="btn btn-link"> <a href="/view/<%= medWords[index]._id %>"><i
+                                            class="bi bi-eye"></i></a>
+                                </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-link"> <a href="/edit/<%= medWords[index]._id %>"><i
+                                            class="bi bi-pen"></i></a></button>
+                            </td>
+                            <td>
+                                <form action="/edit/<%= medWords[index]._id %>?_method=DELETE" method="POST"
+                                    class="position-relative">
+                                    <button type="submit" class="btn btn-link">
+                                        <i class="bi bi-x-circle"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <% } %>
+                </tbody>
+            </table>
+            <% } else { %>
+                <h2>No results found.</h2>
+                <% } %>
+    </div>
+</section>

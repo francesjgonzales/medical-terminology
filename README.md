@@ -68,6 +68,8 @@ medical-terminology/
 
     Solution
 
+5.  Message: (node:16746) [DEP0044] DeprecationWarning: The `util.isArray` API is deprecated. Please use `Array.isArray()` instead.
+
 ### Resources:
 
 https://blog.postman.com/how-to-create-a-rest-api-with-node-js-and-express/

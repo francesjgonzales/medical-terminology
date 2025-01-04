@@ -1,3 +1,16 @@
+<div class="col py-3">
+    <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active">View</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
 <section class="container-sm mt-5">
     <h1>View <%= medicalData.term %>
     </h1>
@@ -5,23 +18,15 @@
     <div class="mb-3">
         <label>Medical Term:</label>
         <%= medicalData.term %>
-            <div class="valid-feedback">
-                This word exists in the Medical Term
-            </div>
     </div>
     <div class="mb-3">
         <label>Description:</label>
         <%= medicalData.definition %>
     </div>
     <div class="mb-3">
+        <label>Category:</label>
         <div>
             <%= medicalData.category%>
         </div>
     </div>
-    <div class="mb-3">
-        <button type="submit" class="btn btn-primary">Update Term</button>
-        <button type="submit" class="btn btn-danger" data-bs-toggle="modal" id="deleteButton"
-            data-bs-target="#deleteModal">Delete</button>
-    </div>
-
 </section>

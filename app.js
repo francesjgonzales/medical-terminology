@@ -11,7 +11,6 @@ const port = process.env.PORT || 3000;
 connectMongoose();
 
 // Add flash message
-/* const { flash } = require('express-flash-message') */
 const flash = require('connect-flash');
 const session = require('express-session')
 
@@ -32,8 +31,7 @@ app.set('layout', './layouts/main');
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(expressLayouts);
-const bodyParser = require('body-parser')
-app.use(bodyParser.urlencoded({ extended: false }))
+
 // Express Session for flash message
 app.use(
     session({
@@ -45,6 +43,9 @@ app.use(
         }
     })
 );
+
+// Flash messages
+app.use(flash({ sessionKeyName: 'express-flash-message', }));
 
 // Router
 app.use('/', require('./server/routes/medical'))
