@@ -2,31 +2,49 @@
 
 ## Building REST API using Node.js, Express, and MongoDB (Mongoose)
 
+This is a project for education purpose only.
+
 ## Directory Structure:
 
 ```
 medical-terminology/
 │
+├── public/
+│   ├──  script.js
+│   └── style.css
+│
 ├── server/
-│   │
 │   ├── config/
 │   │   └── mongoose.js
+│   │
 │   ├── controller/
 │   │   └── medicalTermController.js
-│   ├── routes/
-│   │   └── route.js
+│   │
+│   ├── models/
+│   │   └── model.js
+│   │
+│   └── routes/
+│       └── medical.js
 │
 ├── views/
-│   └── layouts
-│   └── index.ejs
-│
-├── public/
-│   └── script.js
-│   └── style.css
+│   ├── layouts
+│   │   └── main.js
+│   │
+│   ├── medical
+│   │   ├── add.js
+│   │   ├──  edit.js
+│   │   └── view.js
+│   │
+│   ├── partials.ejs
+│   │   └── searchBar.js
+│   │
+│   ├── index.ejs
+│   │
+│   └── search.ejs
 │
 ├── app.js
 │
-├── package.json
+└──  package.json
 
 ```
 
@@ -76,9 +94,11 @@ medical-terminology/
 
 4.  Message: Error [ERR_HTTP_HEADERS_SENT]
 
-    Solution
+    Solution:
 
 5.  Message: (node:16746) [DEP0044] DeprecationWarning: The `util.isArray` API is deprecated. Please use `Array.isArray()` instead.
+
+    Solution: Commented out express-flash. Still researching why it causes this to make the error.
 
 ### Resources:
 
@@ -93,7 +113,3 @@ https://dev.to/kodebae/how-to-remove-a-leaked-env-file-from-github-permanently-3
 ### Credits:
 
 Learned the CRUD from [RaddyTheBrand](https://github.com/RaddyTheBrand)
-
-```
-
-```
