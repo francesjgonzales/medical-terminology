@@ -22,7 +22,7 @@ exports.addMedicalTerm = async (req, res) => {
         title: 'Medical Terminology',
         description: 'For educational purpose only'
     }
-    res.render('medical/add', headers)
+    res.render('medical/add', { headers })
 }
 
 // GET to edit
@@ -77,10 +77,8 @@ exports.postMedicalTerm = async (req, res) => {
     })
     try {
         addMedicalTerm.save();
-        /* await req.flash('info', 'New customer added') */
         res.redirect('/')
     } catch (error) {
-        res.status(500)
         console.log(error)
         throw new Error(error.message)
     }
@@ -116,4 +114,9 @@ exports.searchMedData = async (req, res) => {
     } catch (error) {
         console.log(error);
     }
+}
+
+
+exports.errorPage = async (req, res) => {
+    res.render('404')
 }

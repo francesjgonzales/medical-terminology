@@ -2,7 +2,7 @@
 
 ## Building REST API using Node.js, Express, and MongoDB (Mongoose)
 
-This is a project for education purpose only.
+This is a project for education purpose only. It is deployed in Render under free instance that may cause the [page to load longer](https://render.com/docs/free) than expected.
 
 ## Directory Structure:
 

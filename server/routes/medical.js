@@ -21,5 +21,8 @@ router.delete('/edit/:id', medicalController.deleteMedicalTerm)
 // SEARCH
 router.post('/search', medicalController.searchMedData)
 
+// 404
+router.get('/*', medicalController.errorPage)
+
 
 module.exports = router;
