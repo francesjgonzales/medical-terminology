@@ -4,8 +4,39 @@
         <input type="search" name="searchTerm" class="form-control form-control-dark w-100 rounded"
             placeholder="Search..." aria-label="Search">
     </form>
+
 </div>
 
+<div class="container-sm mt-5">
+    <div class="mt-5">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Term with no root</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<section>
+    <div class="container">
+
+        <% medicalData.map((category)=> { %>
+            <%= category.category %>
+                <%= category.term %>
+                    <% }); %>
+    </div>
+</section>
 
 <section class="container-sm mt-5">
     <div class="mt-5">
@@ -26,7 +57,11 @@
                     <th scope="col">Category</th>
                     <th></th>
                     <th></th>
-                    <th></th>
+                    <th>
+                        <div class="btn-group me-2">
+                            <a href="/add" class="btn btn-sm btn-outline-primary">+ Add Term</a>
+                        </div>
+                    </th>
                 </tr>
             </thead>
             <tbody id="">

@@ -5,6 +5,7 @@ const medicalController = require('../controller/medicalTermController')
 // GET
 router.get('/', medicalController.getAllMedicalTerm)
 router.get('/view/:id', medicalController.viewOneMedicalTerm)
+router.get('/category', medicalController.searchNoPrefix)
 
 // POST 
 router.get('/add', medicalController.addMedicalTerm)
