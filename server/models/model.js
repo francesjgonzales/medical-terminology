@@ -14,7 +14,7 @@ const newMedTerm = new mongoose.Schema(
         },
         category: {
             type: String,
-            enum: ['Term with no root', 'Term with no prefix'],
+            enum: ['Term with no root', 'Term with no prefix', "Terms related to anatomy and physiology"],
         }
     }
 )

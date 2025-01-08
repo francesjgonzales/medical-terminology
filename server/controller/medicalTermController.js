@@ -119,8 +119,10 @@ exports.searchMedData = async (req, res) => {
 // Get Term with no prefix category
 exports.searchNoPrefix = async (req, res) => {
     try {
-        const medicalData = await newMedTerm.find({ category: "Term with no root" });
-        res.render('medical/category', { medicalData })
+        const noRoot = await newMedTerm.find({ category: "Term with no root" });
+        const noPrefix = await newMedTerm.find({ category: "Term with no prefix" });
+        const anatomyPhysiology = await newMedTerm.find({ category: "Terms related to anatomy and physiology" });
+        res.render('medical/category', { noRoot, noPrefix, anatomyPhysiology })
     } catch (error) {
         res.render('404')
     }

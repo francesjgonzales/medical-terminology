@@ -1,42 +1,48 @@
-<section>
-    <div class="container">
+<div class="container">
+    <section>
+        <div class="container">
 
-        <% medicalData.map((medicalData)=> { %>
-            <%= medicalData.category %>
+            <% noRoot.map((noRoot)=> { %>
+                <%= noRoot.category %>
 
-                <% }); %>
-    </div>
-</section>
+                    <% }); %>
+        </div>
+    </section>
+    <section>
+        <div class="container">
 
-<tbody id="">
-    <% for( let index=0; index < medicalData.length; index++ ) { %>
-        <tr>
-            <td>
-                <%= medicalData[index].term %>
-            </td>
-            <td>
-                <%= medicalData[index].definition %>
-            </td>
-            <td>
-                <%= medicalData[index].category %>
-            </td>
-            <td>
-                <button class="btn btn-link"> <a href="/view/<%= medicalData[index]._id %>"><i
-                            class="bi bi-eye"></i></a>
-                </button>
-            </td>
-            <td>
-                <button class="btn btn-link"> <a href="/edit/<%= medicalData[index]._id %>"><i
-                            class="bi bi-pen"></i></a></button>
-            </td>
-            <td>
-                <form action="/edit/<%= medicalData[index]._id %>?_method=DELETE" method="POST"
-                    class="position-relative">
-                    <button type="submit" class="btn btn-link">
-                        <i class="bi bi-x-circle"></i>
-                    </button>
-                </form>
-            </td>
-        </tr>
-        <% } %>
+            <% anatomyPhysiology.map((anatomyPhysiology)=> { %>
+                <%= anatomyPhysiology.category %>
+
+                    <% }); %>
+        </div>
+    </section>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Term</th>
+                <th scope="col">Definition</th>
+                <th scope="col">Category</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="">
+            <% for( let index=0; index < noPrefix.length; index++ ) { %>
+                <tr>
+                    <td>
+                        <%= noPrefix[index].term %>
+                    </td>
+                    <td>
+                        <%= noPrefix[index].definition %>
+                    </td>
+                    <td>
+                        <%= noPrefix[index].category %>
+                    </td>
+
+                    <% } %>
+    </table>
+</div>
+
 </tbody>
