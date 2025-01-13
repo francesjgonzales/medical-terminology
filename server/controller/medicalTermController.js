@@ -9,7 +9,7 @@ exports.getAllMedicalTerm = async (req, res) => {
             description: 'For educational purpose only'
         }
         const medicalData = await newMedTerm.find({});
-        res.render('index', { headers, medicalData, message })
+        res.render('index', { headers, medicalData, message, })
 
     } catch (error) {
         res.status(500)
@@ -19,7 +19,7 @@ exports.getAllMedicalTerm = async (req, res) => {
 
 exports.addMedicalTerm = async (req, res) => {
     const headers = {
-        title: 'Medical Terminology',
+        title: 'Add your term',
         description: 'For educational purpose only'
     }
     res.render('medical/add', { headers })
@@ -59,8 +59,12 @@ exports.editPostMedicalTerm = async (req, res) => {
 
 exports.viewOneMedicalTerm = async (req, res) => {
     try {
+        const headers = {
+            title: 'View',
+            description: 'For educational purpose only'
+        }
         const medicalData = await newMedTerm.findOne({ _id: req.params.id })
-        res.render('medical/view', { medicalData })
+        res.render('medical/view', { medicalData, headers })
 
     } catch (error) {
         res.status(500)
@@ -117,12 +121,16 @@ exports.searchMedData = async (req, res) => {
 }
 
 // Get Term with no prefix category
-exports.searchNoPrefix = async (req, res) => {
+exports.category = async (req, res) => {
     try {
+        const headers = {
+            title: 'Category',
+            description: 'For educational purpose only'
+        }
         const noRoot = await newMedTerm.find({ category: "Term with no root" });
         const noPrefix = await newMedTerm.find({ category: "Term with no prefix" });
         const anatomyPhysiology = await newMedTerm.find({ category: "Terms related to anatomy and physiology" });
-        res.render('medical/category', { noRoot, noPrefix, anatomyPhysiology })
+        res.render('medical/category', { noRoot, noPrefix, anatomyPhysiology, headers })
     } catch (error) {
         res.render('404')
     }

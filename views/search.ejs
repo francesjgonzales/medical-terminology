@@ -1,16 +1,26 @@
-<div class="container mt-5 align-items-center">
-
-    <form class="nav col-12 col-md-auto flex-fill mb-2 justify-content-center mb-md-0" role="search" method="POST"
-        action="/search">
-
-        <input type="search" name="searchTerm" class="form-control form-control-dark w-100 rounded"
-            placeholder="Search..." aria-label="Search">
-
-    </form>
-
+<div class="row">
+    <div class="col-md-8">
+        <div class="container d-flex justify-content-start">
+            <form class="nav col-12 col-md-auto flex-fill mb-2 justify-content-center mb-md-0" role="search"
+                method="POST" action="/search">
+                <input type="search" name="searchTerm" class="form-control form-control-dark w-100 rounded"
+                    placeholder="Search..." aria-label="Search">
+            </form>
+        </div>
+    </div>
+    <div class="col-6 col-md-4">
+        <ul class="nav d-flex justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/category">By Category</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">By Term</a>
+            </li>
+        </ul>
+    </div>
 </div>
 
-<section class="container-sm mt-5">
+<section class="container">
 
     <div class="mt-5">
         <% if (medWords !="" ) { %>
@@ -20,9 +30,11 @@
                         <th scope="col">Term</th>
                         <th scope="col">Definition</th>
                         <th scope="col">Category</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
+                        <th>
+                            <div class="btn-group me-2">
+                                <a href="/add" class="btn btn-sm btn-outline-primary">+</a>
+                            </div>
+                        </th>
                     </tr>
                 </thead>
                 <tbody id="">
@@ -38,21 +50,25 @@
                                 <%= medWords[index].category %>
                             </td>
                             <td>
-                                <button class="btn btn-link"> <a href="/view/<%= medWords[index]._id %>"><i
-                                            class="bi bi-eye"></i></a>
-                                </button>
-                            </td>
-                            <td>
-                                <button class="btn btn-link"> <a href="/edit/<%= medWords[index]._id %>"><i
-                                            class="bi bi-pen"></i></a></button>
-                            </td>
-                            <td>
-                                <form action="/edit/<%= medWords[index]._id %>?_method=DELETE" method="POST"
-                                    class="position-relative">
-                                    <button type="submit" class="btn btn-link">
-                                        <i class="bi bi-x-circle"></i>
-                                    </button>
-                                </form>
+                                <div class="dropdown">
+                                    <a data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-three-dots-vertical"></i>
+                                    </a>
+                                    <ul class="dropdown-menu m-1 p-2">
+                                        <li><a class="text-dark" href="/view/<%= medWords[index]._id %>">View More
+                                                Details</a></li>
+                                        <li><a class="text-dark" href="/view/<%= medWords[index]._id %>">Edit</i>
+                                        </li>
+                                        <li>
+                                            <form action="/edit/<%= medWords[index]._id %>?_method=DELETE" method="POST"
+                                                class="position-relative">
+                                                <a class="text-dark" type="submit">
+                                                    Delete
+                                                </a>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
                             </td>
                         </tr>
                         <% } %>

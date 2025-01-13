@@ -4,6 +4,8 @@ const expressLayouts = require('express-ejs-layouts')
 const connectMongoose = require('./server/config/mongoose')
 const path = require('path')
 
+
+
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -24,7 +26,10 @@ const methodOverride = require('method-override')
 app.use(methodOverride('_method')) // adds the method-override middleware
 
 // Loads static files - css, js, images
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('public'));
+// Favicon
+const favicon = require('express-favicon');
+app.use(favicon('/public/favicon.ico'));
 
 // Templating Engine
 app.set('layout', './layouts/main');

@@ -1,19 +1,21 @@
-<section class="container-sm mt-5">
-    <h2>View <%= medicalData.term %>
-    </h2>
+<%- include('../partials/breadcrumbs.ejs') %>
 
-    <div class="mb-3">
-        <label>Medical Term:</label>
-        <%= medicalData.term %>
-    </div>
-    <div class="mb-3">
-        <label>Description:</label>
-        <%= medicalData.definition %>
-    </div>
-    <div class="mb-3">
-        <label>Category:</label>
-        <div>
-            <%= medicalData.category%>
+    <section class="container-sm mt-5">
+        <h2>View <%= medicalData.term %>
+        </h2>
+
+        <div class="mb-3">
+            <label>Medical Term:</label>
+            <%= medicalData.term %>
         </div>
-    </div>
-</section>
+        <div class="mb-3">
+            <label>Description:</label>
+            <%= medicalData.definition %>
+        </div>
+        <div class="mb-3">
+            <label>Category:</label>
+            <div>
+                <%= medicalData.category%>
+            </div>
+        </div>
+    </section>

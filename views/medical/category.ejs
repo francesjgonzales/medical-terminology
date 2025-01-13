@@ -1,48 +1,147 @@
-<div class="container">
-    <section>
-        <div class="container">
+<%- include('../partials/breadcrumbs.ejs') %>
 
-            <% noRoot.map((noRoot)=> { %>
-                <%= noRoot.category %>
+    <section class="container">
 
-                    <% }); %>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-
-            <% anatomyPhysiology.map((anatomyPhysiology)=> { %>
-                <%= anatomyPhysiology.category %>
-
-                    <% }); %>
-        </div>
-    </section>
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Term</th>
-                <th scope="col">Definition</th>
-                <th scope="col">Category</th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody id="">
-            <% for( let index=0; index < noPrefix.length; index++ ) { %>
+        <table class="table mt-5">
+            <thead>
+                <tr colspan="2"></tr>
                 <tr>
-                    <td>
-                        <%= noPrefix[index].term %>
-                    </td>
-                    <td>
-                        <%= noPrefix[index].definition %>
-                    </td>
-                    <td>
-                        <%= noPrefix[index].category %>
-                    </td>
+                    <th scope="col">Term</th>
+                    <th scope="col">Definition</th>
+                    <th scope="col">
+                        <div class="dropdown">
+                            <a data-bs-toggle="dropdown" aria-expanded="false">
+                                Category <i class="bi bi-caret-down"></i>
+                            </a>
+                            <% for( let index=0; index < noPrefix.length; index++ ) { %>
+                                <ul class="dropdown-menu m-1 p-2">
+                                    <li><a class="text-dark" href="#noPrefix" id="#noPrefix">Term with no prefix</a>
+                                    </li>
+                                    <li><a class="text-dark" href="#noRoot" data-bs-toggle="collapse">Term with no
+                                            root</i>
+                                    </li>
+                                    <li><a class="text-dark" href="#anatomyPhysio" data-bs-toggle="collapse">Terms
+                                            related
+                                            to anatomy and physiology</i>
+                                    </li>
 
-                    <% } %>
-    </table>
-</div>
+                                </ul>
+                                <% } %>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="btn-group me-2">
+                            <a href="/add" class="btn btn-sm btn-outline-primary">+</a>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="noPrefix">
+                <% for( let index=0; index < noPrefix.length; index++ ) { %>
+                    <tr>
+                        <td>
+                            <%= noPrefix[index].term %>
+                        </td>
+                        <td>
+                            <%= noPrefix[index].definition %>
+                        </td>
+                        <td>
+                            <%= noPrefix[index].category %>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu m-1 p-2">
+                                    <li><a class="text-dark" href="/view/<%= noPrefix[index]._id %>">View More
+                                            Details</a></li>
+                                    <li><a class="text-dark" href="/view/<%= noPrefix[index]._id %>">Edit</i>
+                                    </li>
+                                    <li>
+                                        <form action="/edit/<%= noPrefix[index]._id %>?_method=DELETE" method="POST"
+                                            class="position-relative">
+                                            <a class="text-dark" type="submit">
+                                                Delete
+                                            </a>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
 
-</tbody>
+                        <% } %>
+            </tbody>
+            <tbody id="noRoot">
+                <% for( let index=0; index < noRoot.length; index++ ) { %>
+                    <tr>
+                        <td>
+                            <%= noRoot[index].term %>
+                        </td>
+                        <td>
+                            <%= noRoot[index].definition %>
+                        </td>
+                        <td>
+                            <%= noRoot[index].category %>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu m-1 p-2">
+                                    <li><a class="text-dark" href="/view/<%= noRoot[index]._id %>">View
+                                            More
+                                            Details</a></li>
+                                    <li><a class="text-dark" href="/view/<%= noRoot[index]._id %>">Edit</i>
+                                    </li>
+                                    <li>
+                                        <form action="/edit/<%= noRoot[index]._id %>?_method=DELETE" method="POST"
+                                            class="position-relative">
+                                            <a class="text-dark" type="submit">
+                                                Delete
+                                            </a>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <% } %>
+            </tbody>
+            <tbody id="anatomyPhysiology">
+                <% for( let index=0; index < anatomyPhysiology.length; index++ ) { %>
+                    <tr>
+                        <td>
+                            <%= anatomyPhysiology[index].term %>
+                        </td>
+                        <td>
+                            <%= anatomyPhysiology[index].definition %>
+                        </td>
+                        <td>
+                            <%= anatomyPhysiology[index].category %>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu m-1 p-2">
+                                    <li><a class="text-dark" href="/view/<%= anatomyPhysiology[index]._id %>">View More
+                                            Details</a></li>
+                                    <li><a class="text-dark" href="/view/<%= anatomyPhysiology[index]._id %>">Edit</i>
+                                    </li>
+                                    <li>
+                                        <form action="/edit/<%= anatomyPhysiology[index]._id %>?_method=DELETE"
+                                            method="POST" class="position-relative">
+                                            <a class="text-dark" type="submit">
+                                                Delete
+                                            </a>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <% } %>
+            </tbody>
+        </table>
+    </section>
