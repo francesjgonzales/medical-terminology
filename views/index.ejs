@@ -1,19 +1,18 @@
-<div class="row">
-    <div class="col">
-        <div class="container d-flex justify-content-start">
-            <form class="nav col-12 col-md-auto flex-fill mb-2 justify-content-center mb-md-0" role="search"
-                method="POST" action="/search">
-                <input type="search" name="searchTerm" class="form-control form-control-dark w-100 rounded"
-                    placeholder="Search..." aria-label="Search">
-            </form>
-        </div>
-    </div>
-</div>
-
 <section class="container">
-    <table class="table mt-5">
+    <table class="table table-hover">
+        <div class="row">
+            <div class="col-sm-12 col-md-5">
+                <h1 class=" text-start justify-content-start"><a href="/" class="text-decoration-none">Medical
+                        Terminology</a></h1>
+            </div>
+            <div class="col-sm-12 col-md-7 mb-3">
+                <form role="search" method="POST" action="/search">
+                    <input type="search" name="searchTerm" class="form-control form-control-dark w-100 rounded"
+                        placeholder="Search..." aria-label="Search">
+                </form>
+            </div>
+        </div>
         <thead>
-            <tr colspan="2"></tr>
             <tr>
                 <th scope="col">Term</th>
                 <th scope="col">Definition</th>

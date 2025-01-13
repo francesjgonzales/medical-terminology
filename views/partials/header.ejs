@@ -1,3 +1,17 @@
-<div class="container text-center mt-5 mb-5">
-    <h1 class="header"><a href="/" class="text-decoration-none">Medical Terminology</a></h1>
+<div class="container-sm">
+    <div class="row">
+        <div class="col-6">
+            <h1 class="header text-start"><a href="/" class="text-decoration-none">Medical Terminology</a></h1>
+        </div>
+        <div class="col-6">
+            <div class="container d-flex justify-content-start">
+                <form class="nav col-12 col-md-auto flex-fill mb-2 justify-content-center mb-md-0" role="search"
+                    method="POST" action="/search">
+                    <input type="search" name="searchTerm" class="form-control form-control-dark w-100 rounded"
+                        placeholder="Search..." aria-label="Search">
+                </form>
+            </div>
+
+        </div>
+    </div>
 </div>
