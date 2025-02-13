@@ -1173,81 +1173,1838 @@
   "suffixes-indicating-condition": [
     {
       "id": "sc1",
-      "suffix": "",
-      "definition": "",
-      "example": ""
+      "suffix": "-algia, -dynia",
+      "definition": "pain",
+      "example": "otalgia, otodynia: pain in the ear or an earache. arthrodynia: joint pain"
     },
     {
-      "id": "sc1",
-      "suffix": "",
-      "definition": "",
-      "example": ""
+      "id": "sc2",
+      "suffix": "-cele",
+      "definition": "hernia (protusion of an organ through a body part)",
+      "example": "cystocele: hernia or protrusion of the bladder"
     },
     {
-      "id": "sc1",
-      "suffix": "",
-      "definition": "",
-      "example": ""
+      "id": "sc3",
+      "suffix": "-ectasis, -ectasia",
+      "definition": "dilation, stretching",
+      "example": "angiectasis: dilation of a vessel"
     },
     {
-      "id": "sc1",
-      "suffix": "",
-      "definition": "",
-      "example": ""
+      "id": "sc4",
+      "suffix": "-emesis",
+      "definition": "vomiting",
+      "example": "hematemesis: vomiting of blood"
     },
     {
-      "id": "sc1",
-      "suffix": "",
-      "definition": "",
-      "example": ""
+      "id": "sc5",
+      "suffix": "-emia",
+      "definition": "blood condition, blood",
+      "example": "ischemia: hold back of blood to an area"
     },
     {
-      "id": "sc1",
-      "suffix": "",
-      "definition": "",
-      "example": ""
+      "id": "sc6",
+      "suffix": "-iasis",
+      "definition": "abnormal condition, pathologic state",
+      "example": "cholecystolithiasis: condition of stones in the gall bladder"
     },
     {
-      "id": "sc1",
-      "suffix": "",
-      "definition": "",
-      "example": ""
+      "id": "sc7",
+      "suffix": "-itis, -istis",
+      "definition": "inflammation",
+      "example": "gastritis: inflammation of stomach"
     },
     {
-      "id": "sc1",
-      "suffix": "",
-      "definition": "",
-      "example": ""
+      "id": "sc8",
+      "suffix": "-lith",
+      "definition": "stone, calculi",
+      "example": "cholelith: bile stones, gall stones"
     },
     {
-      "id": "sc1",
-      "suffix": "",
-      "definition": "",
-      "example": ""
+      "id": "sc9",
+      "suffix": "-lysis",
+      "definition": "destruction, breakdown",
+      "example": "hemolysis: breakdown of blood"
     },
     {
-      "id": "sc1",
-      "suffix": "",
-      "definition": "",
-      "example": ""
+      "id": "sc10",
+      "suffix": "-malacia",
+      "definition": "abnormal softening",
+      "example": "osteomalacia: softening of bone"
     },
     {
-      "id": "sc1",
-      "suffix": "",
-      "definition": "",
-      "example": ""
+      "id": "sc11",
+      "suffix": "-megaly",
+      "definition": "enlargement, large, great",
+      "example": "cardiomegaly: enlarged heart"
     },
     {
-      "id": "sc1",
-      "suffix": "",
-      "definition": "",
-      "example": ""
+      "id": "sc12",
+      "suffix": "-oma",
+      "definition": "tumor, neoplasm",
+      "example": "adenoma: tumor of a gland"
     },
     {
-      "id": "sc1",
-      "suffix": "",
-      "definition": "",
-      "example": ""
+      "id": "sc13",
+      "suffix": "-oma",
+      "definition": "tumor, neoplasm",
+      "example": "adenoma: tumor of a gland"
+    },
+    {
+      "id": "sc14",
+      "suffix": "-pathy",
+      "definition": "disease",
+      "example": "myopathy: disease of the muscle"
+    },
+    {
+      "id": "sc15",
+      "suffix": "-penia",
+      "definition": "decrease, deficiency",
+      "example": "cytopenia: deficiency in cells"
+    },
+    {
+      "id": "sc16",
+      "suffix": "-phob",
+      "definition": "irrational fear",
+      "example": "acrophobia: condition where there is a fear of heights"
+    },
+    {
+      "id": "sc17",
+      "suffix": "-plegia",
+      "definition": "paralysis",
+      "example": "quadriplegia: paralysis of four limbs"
+    },
+    {
+      "id": "sc18",
+      "suffix": "-ptosis",
+      "definition": "drooping, sagging, prolapse",
+      "example": "neophroptosis: drooping kidney"
+    },
+    {
+      "id": "sc19",
+      "suffix": "-ptysis",
+      "definition": "spitting",
+      "example": "hemoptysis: spitting up blood"
+    },
+    {
+      "id": "sc20",
+      "suffix": "-rrhage, -rrhagia",
+      "definition": "bursting forth",
+      "example": "hemorrhage: bursting forth of blood, bleeding"
+    },
+    {
+      "id": "sc21",
+      "suffix": "-rrhea",
+      "definition": "flow, discharge",
+      "example": "rhinorrhea: discharge from the nose"
+    },
+    {
+      "id": "sc22",
+      "suffix": "-rrhexis",
+      "definition": "rupture",
+      "example": "splenorrhexis"
+    },
+    {
+      "id": "sc23",
+      "suffix": "-sclerosis",
+      "definition": "hardening, hardness",
+      "example": "arteriosclerosis: hardening of the arteries"
+    },
+    {
+      "id": "sc24",
+      "suffix": "-spasm",
+      "definition": "sudden involuntary contractions, tightening",
+      "example": "blepharospasm: sudden involuntary contraction of the eyelid"
+    },
+    {
+      "id": "sc25",
+      "suffix": "-stenosis",
+      "definition": "narrowing, tightening",
+      "example": "arteriostenosis: narrowing of the arteries"
+    },
+    {
+      "id": "sc26",
+      "suffix": "-y, -ion",
+      "definition": "process",
+      "example": "neuropathy: disease process of the nerve"
+    }
+  ],
+  "suffixes-indicating-diagnostic-surgical-procedures": [
+    {
+      "id": "dsp1",
+      "suffix": "-centesis",
+      "definition": "surgical puncture to remove fluid",
+      "example": "thoracocentesis: surgical puncture into the chest wall to remove fluid"
+    },
+    {
+      "id": "dsp2",
+      "suffix": "-desis",
+      "definition": "surgical fusion, bind, tie together",
+      "example": "arthrodesis: surgical fusion of a joint"
+    },
+    {
+      "id": "dsp3",
+      "suffix": "-ectomy",
+      "definition": "cutting out, excision, surgical removal",
+      "example": "tonsillectomy: excision of the tonsils"
+    },
+    {
+      "id": "dsp4",
+      "suffix": "-graphy",
+      "definition": "process of recording a picture or record",
+      "example": "myelography: producing an image of the spinal cord"
+    },
+    {
+      "id": "dsp5",
+      "suffix": "-gram",
+      "definition": "tracing, picture or record",
+      "example": "electroencephalogram: record of the electrical activity of the brain"
+    },
+    {
+      "id": "dsp6",
+      "suffix": "-graph",
+      "definition": "instrument used to record or create a picture",
+      "example": "electroencephalograph: instrument used to record the electrical activity of the brain"
+    },
+    {
+      "id": "dsp7",
+      "suffix": "-metry",
+      "definition": "to measure",
+      "example": "pelvimetry: measurement of the pelvis"
+    },
+    {
+      "id": "dsp8",
+      "suffix": "-opsy, -opsis, -opsia",
+      "definition": "view of, vision",
+      "example": "biopsy: removal of a piece of living tissure for examination"
+    },
+    {
+      "id": "dsp9",
+      "suffix": "-pexy",
+      "definition": "surgical fixation, to put in place",
+      "example": "nephropexy: surgical fixation of a kidney"
+    },
+    {
+      "id": "dsp10",
+      "suffix": "-plasty",
+      "definition": "surgical repair",
+      "example": "arthroplasty: surgical repair of a joint"
+    },
+    {
+      "id": "dsp11",
+      "suffix": "-rrhaphy",
+      "definition": "suture",
+      "example": "splenorrhaphy: suturing of the spleen"
+    },
+    {
+      "id": "dsp12",
+      "suffix": "-scope",
+      "definition": "examination using scope",
+      "example": "bronchoscopy: examine the bronchus using a scope"
+    },
+    {
+      "id": "dsp13",
+      "suffix": "-stasis",
+      "definition": "controlling, stopping",
+      "example": "hemostasis: stoppage of blood"
+    },
+    {
+      "id": "dsp14",
+      "suffix": "-stomy",
+      "definition": "create a permanent opening",
+      "example": "tracheostomy: create a permanent opening into the trachea"
+    },
+    {
+      "id": "dsp15",
+      "suffix": "-tome",
+      "definition": "instrument used to cut",
+      "example": "osteotome: instrument used to cut bone"
+    },
+    {
+      "id": "dsp16",
+      "suffix": "-tomy",
+      "definition": "surgical incision, cutting",
+      "example": "osteotomy: surgical incision into a bone"
+    }
+  ],
+  "suffixes-general": [
+    {
+      "id": "sg1",
+      "suffix": "-blast",
+      "definition": "immature, growing",
+      "example": "erythroblast: immature red blood cell"
+    },
+    {
+      "id": "sg2",
+      "suffix": "-cyte",
+      "definition": "cell",
+      "example": "leukocyte: white blood cell"
+    },
+    {
+      "id": "sg3",
+      "suffix": "-er, -or, -ician, -logist, -ist",
+      "definition": "specialist in the study of",
+      "example": "cardiologist: heart specialist"
+    },
+    {
+      "id": "sg4",
+      "suffix": "-logy",
+      "definition": "study of",
+      "example": "physiology: stody of function"
+    },
+    {
+      "id": "sg5",
+      "suffix": "-phagia",
+      "definition": "eating, swallowing",
+      "example": "dysphagia: difficulty swallowing"
+    },
+    {
+      "id": "sg6",
+      "suffix": "-phasia",
+      "definition": "speech, speak",
+      "example": "aphasia: unable to speak"
+    },
+    {
+      "id": "sg7",
+      "suffix": "-plasia",
+      "definition": "formation, development, growth",
+      "example": "hyperplasia: excessive formation, abnormal increase in the number of normal cells in a tissue"
+    },
+    {
+      "id": "sg8",
+      "suffix": "-pnea",
+      "definition": "breathing",
+      "example": "dyspnea: difficulty breathing"
+    },
+    {
+      "id": "sg9",
+      "suffix": "-poiesis",
+      "definition": "production, formation",
+      "example": "hematopoiesis: formation of blood"
+    },
+    {
+      "id": "sg10",
+      "suffix": "-trophy",
+      "definition": "development, growth, nourishment",
+      "example": "hypertrophy: increase in the development of a part of the body"
+    },
+    {
+      "id": "sg11",
+      "suffix": "-uria",
+      "definition": "urine, urination",
+      "example": "anuria: absence of urine"
+    },
+    {
+      "id": "sg12",
+      "suffix": "-genous, -genic, -genesis",
+      "definition": "producing, forming",
+      "example": "carcinogenic: cancer producing"
+    },
+    {
+      "id": "sg13",
+      "suffix": "-oid",
+      "definition": "resembling, like",
+      "example": "mucoid: resembling mucus"
+    },
+    {
+      "id": "sg14",
+      "suffix": "-ole, -ule",
+      "definition": "small",
+      "example": "venule: small vein"
+    },
+    {
+      "id": "sg15",
+      "suffix": "-ac, -al, -ar, -ary, -eal, -ic, -ior, -ose, -ous, -tic, -ine",
+      "definition": "pertaining to",
+      "example": "gastric: pertaining to stomach"
+    }
+  ],
+  "prefix-directin-position": [
+    {
+      "id": "pdp1",
+      "suffix": "ab-, abs-",
+      "definition": "away from",
+      "example": "abduction: drawing away from"
+    },
+    {
+      "id": "pdp2",
+      "suffix": "ad-",
+      "definition": "toward, in direction of",
+      "example": "adduction: drawing toward"
+    },
+    {
+      "id": "pdp3",
+      "suffix": "ante-",
+      "definition": "before, forward",
+      "example": "antenatal: pertaining to before birth"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "circum-",
+      "definition": "around, about",
+      "example": "circumduction: process of putting a part through circular motion"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "dia-",
+      "definition": "through, complete, between",
+      "example": "diagnosis: differentiating between one disease and another"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "ecto-, e-, ex-, exo-, extra-",
+      "definition": "outside, out, outward",
+      "example": "ectogenous: produced from outside excision: process of cutting out"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "endo-",
+      "definition": "within, inside",
+      "example": "endoscope: instrument used to look inside the body"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "endo-",
+      "definition": "within, inside",
+      "example": "endoscope: instrument used to look inside the body"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "epi-",
+      "definition": "upon, on, above",
+      "example": "epicardium: above the heart"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "eso-",
+      "definition": "inward, within",
+      "example": "esotropia: turning inward of the eye"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "hyper-, supra-",
+      "definition": "excessive, above, increased",
+      "example": "hyperplasia: abnormal increase in the number of normal cells in a tissue"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "hypo-",
+      "definition": "decreased, below, under, deficient",
+      "example": "hypogastric: pertaining to below the stomach"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "in-",
+      "definition": "in, into, not, without",
+      "example": "incision: process of cutting into"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "infra-, sub-",
+      "definition": "below, beneath, inferior to, less, under",
+      "example": "infracostal: pertaining to below ribs. subdermal: pertaining to under the skin"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "inter-",
+      "definition": "between, among",
+      "example": "intercellular: pertaining to between the cells"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "intra-",
+      "definition": "within, into, inside",
+      "example": "intracranial: pertaining to within the skull"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "meta-, ultra-",
+      "definition": "beyond, change, behind",
+      "example": "metaplasia: change in formation"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "para-",
+      "definition": "beside, near, apart from",
+      "example": "paranasal: pertaining to near the nose"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "peri-",
+      "definition": "around, surrounding",
+      "example": "perineuritis: inflammation around nerve"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "post-",
+      "definition": "after, behind",
+      "example": "postpartum: after delivery of a baby"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "pre-",
+      "definition": "before, in front of",
+      "example": "prenatal: pertaining to before birth"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "pro-",
+      "definition": "before",
+      "example": "process: series of things before an event concludes"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "retro-",
+      "definition": "back of, backward, behind",
+      "example": "retroversion: tipping back of an organ"
+    },
+    {
+      "id": "pdp1",
+      "suffix": "trans-, per-",
+      "definition": "across, through",
+      "example": "transection: process of cutting across. percutaneous: pertaining to through the skin"
+    }
+  ],
+  "prefix-negative": [
+    {
+      "id": "pn1",
+      "suffix": "anti-, contra-",
+      "definition": "counter, against",
+      "example": "antibiotic: pertaining to against life. contralateral: pertaining to the opposite side"
+    },
+    {
+      "id": "pnp2",
+      "suffix": "a-, an-",
+      "definition": "no, not, lack of, without",
+      "example": "anemia: lack of (red) blood cells"
+    },
+    {
+      "id": "pnp3",
+      "suffix": "in-, ir-, im-",
+      "definition": "not, in, into, without",
+      "example": "indigestible: not capable of digestion"
+    }
+  ],
+  "prefix-numbers": [
+    {
+      "id": "pno1",
+      "suffix": "bi-, di-",
+      "definition": "two, double, twice",
+      "example": "bilateral: pertaining to both sides"
+    },
+    {
+      "id": "pno1",
+      "suffix": "hemi-, semi-",
+      "definition": "half, partial",
+      "example": "hemiplegia: paralysis of one side of body"
+    },
+    {
+      "id": "pno1",
+      "suffix": "mono-, uni-",
+      "definition": "one",
+      "example": "unilateral: pertaining to one side"
+    },
+    {
+      "id": "pno1",
+      "suffix": "multi-, poly-",
+      "definition": "many, much",
+      "example": "polyadenoma: tumor of many glands"
+    },
+    {
+      "id": "pno1",
+      "suffix": "oligo-",
+      "definition": "scant, few",
+      "example": "oliguria: scant urine"
+    },
+    {
+      "id": "pno1",
+      "suffix": "quadri-",
+      "definition": "four",
+      "example": "quadreplegia: paralysis of four limbs"
+    },
+    {
+      "id": "pno1",
+      "suffix": "tri-",
+      "definition": "three",
+      "example": "tricuspid: three cusps or projections"
+    }
+  ],
+  "prefix-miscellaneous": [
+    {
+      "id": "pm1",
+      "suffix": "ana-, an-",
+      "definition": "backward, excessive, apart, up",
+      "example": "anadipsia: excessive thirst, polydipsia"
+    },
+    {
+      "id": "pm1",
+      "suffix": "auto-",
+      "definition": "self",
+      "example": "autograph: graph taken from one part of the body and placed on another area of the same body"
+    },
+    {
+      "id": "pm1",
+      "suffix": "brady-",
+      "definition": "slow",
+      "example": "bradycardia: slow heart rate"
+    },
+    {
+      "id": "pm1",
+      "suffix": "dys-",
+      "definition": "bad, abnormal, difficult, painful",
+      "example": "dysplasia: abnormal development or growth of cells"
+    },
+    {
+      "id": "pm1",
+      "suffix": "macro-",
+      "definition": "large",
+      "example": "macrocephalic: pertaining to a large head"
+    },
+    {
+      "id": "pm1",
+      "suffix": "mal-",
+      "definition": "bad, poor, evil",
+      "example": "malaise: feeling poor"
+    },
+    {
+      "id": "pm1",
+      "suffix": "micro-",
+      "definition": "small",
+      "example": "microcytic: pertaining to small cells"
+    },
+    {
+      "id": "pm1",
+      "suffix": "neo-",
+      "definition": "new",
+      "example": "neoplasm: new development"
+    },
+    {
+      "id": "pm1",
+      "suffix": "pan-",
+      "definition": "all, entire, every",
+      "example": "pancarditis: inflammation of all layers of the heart"
+    },
+    {
+      "id": "pm1",
+      "suffix": "syn-, sym-",
+      "definition": "together, with, joined",
+      "example": "synarthrotic: pertaining to a joint where the bones are joined"
+    },
+    {
+      "id": "pm1",
+      "suffix": "tachy-",
+      "definition": "fast, rapid",
+      "example": "tachycardia: pertaining to a fast heart rate"
+    }
+  ],
+  "roots-integumentary-system": [
+    {
+      "id": "ris1",
+      "root": "albin/o",
+      "definition": "white"
+    },
+    {
+      "id": "ris2",
+      "root": "adip/o, lip/o, steat/o",
+      "definition": "fat"
+    },
+    {
+      "id": "ris3",
+      "root": "bi/o",
+      "definition": "life"
+    },
+    {
+      "id": "ris4",
+      "root": "cry/o",
+      "definition": "cold"
+    },
+    {
+      "id": "ris5",
+      "root": "cyan/o",
+      "definition": "blue"
+    },
+    {
+      "id": "ris6",
+      "root": "derm/o, dermat/o, cutane/o",
+      "definition": "skin"
+    },
+    {
+      "id": "ris7",
+      "root": "diaphor/e",
+      "definition": "profuse sweating"
+    },
+    {
+      "id": "ris8",
+      "root": "epitheli/o",
+      "definition": "covering"
+    },
+    {
+      "id": "ris9",
+      "root": "erythemat/o, erythr/o, erythem/o",
+      "definition": "red, redness"
+    },
+    {
+      "id": "ris10",
+      "root": "hidr/o",
+      "definition": "sweat"
+    },
+    {
+      "id": "ris11",
+      "root": "hist/o, histi/o",
+      "definition": "tissue"
+    },
+    {
+      "id": "ris12",
+      "root": "kerat/o, keratin/o",
+      "definition": "hard, hornlike"
+    },
+    {
+      "id": "ris13",
+      "root": "leuk/o",
+      "definition": "white"
+    },
+    {
+      "id": "ris14",
+      "root": "melan/o",
+      "definition": "black"
+    },
+    {
+      "id": "ris15",
+      "root": "myc/o",
+      "definition": "fungus"
+    },
+    {
+      "id": "ris16",
+      "root": "necr/o",
+      "definition": "death"
+    },
+    {
+      "id": "ris17",
+      "root": "onych/o, ungu/o",
+      "definition": "nail"
+    },
+    {
+      "id": "ris18",
+      "root": "pil/o, pil/i",
+      "definition": "hair"
+    },
+    {
+      "id": "ris19",
+      "root": "py/o",
+      "definition": "pus"
+    },
+    {
+      "id": "ris20",
+      "root": "seb/o",
+      "definition": "sebum"
+    },
+    {
+      "id": "ris21",
+      "root": "vascul/o",
+      "definition": "vessel"
+    }
+  ],
+  "suffixes-integumentary-system": [
+    {
+      "id": "sis1",
+      "root": "-derma",
+      "definition": "skin"
+    },
+    {
+      "id": "sis2",
+      "root": "-oma",
+      "definition": "tumor, mass"
+    },
+    {
+      "id": "sis3",
+      "root": "-phagia",
+      "definition": "eating"
+    },
+    {
+      "id": "sis4",
+      "root": "-therapy",
+      "definition": "treatment"
+    }
+  ],
+  "prefixes-integumentary-system": [
+    {
+      "id": "pis1",
+      "root": "epi-",
+      "definition": "upon, above, on"
+    }
+  ],
+  "analysis-definition": [
+    {
+      "id": "ad1",
+      "root": "albin/o",
+      "term": "albinism",
+      "term-analysis": "albin=white, -ism=condition",
+      "definition": "Absense of pigment in the skin, hair and eyes. Appear very white."
+    },
+    {
+      "id": "ad2",
+      "root": "adip/o, lip/o, steat/o",
+      "term": "adipose",
+      "term-analysis": "adip=fat, -ose=pertaining to",
+      "definition": "pertaining to fat."
+    },
+    {
+      "id": "ad3",
+      "root": "adip/o, lip/o, steat/o",
+      "term": "lipoma",
+      "term-analysis": "-oma=tumor, lip=fat",
+      "definition": "Tumor or mass containing fat"
+    },
+    {
+      "id": "ad4",
+      "root": "bi/o",
+      "term": "skin biopsy",
+      "term-analysis": "bi=life, -opsy=to view",
+      "definition": "Removal of skin for microscopic examination"
+    },
+    {
+      "id": "ad5",
+      "root": "cyan/o",
+      "term": "cyanotic",
+      "term-analysis": "cyan=blue, -tic=pertaining to",
+      "definition": "Pertaining to bluish discolouration of the skin"
+    },
+    {
+      "id": "ad6",
+      "root": "derm/o, dermat/o, cutane/o",
+      "term": "dermatitis",
+      "term-analysis": "dermat=skin, -itis=inflammation",
+      "definition": "Inflammation of the skin"
+    },
+    {
+      "id": "ad7",
+      "root": "derm/o, dermat/o, cutane/o",
+      "term": "dermatology",
+      "term-analysis": "derm=skin, -logy=study",
+      "definition": "The study of the skin and its diseases"
+    },
+    {
+      "id": "ad8",
+      "root": "derm/o, dermat/o, cutane/o",
+      "term": "hypodermic",
+      "term-analysis": "hypo-=under, below, -ic=pertaining to, derm=skin",
+      "definition": "Pertaining to below the skin"
+    },
+    {
+      "id": "ad9",
+      "root": "derm/o, dermat/o, cutane/o",
+      "term": "subcutaneous",
+      "term-analysis": "sub-=under, cutane=skin, -ous=pertaining to",
+      "definition": "Pertaining to under the skin"
+    },
+    {
+      "id": "ad10",
+      "root": "diaphor/e",
+      "term": "diaphoresis",
+      "term-analysis": "diaphor=profuse sweating, -is=condition",
+      "definition": "Condition where there is profuse sweating"
+    },
+    {
+      "id": "ad11",
+      "root": "epitheli/o",
+      "term": "epithelial",
+      "term-analysis": "epithel=covering, -al=pertaining to",
+      "definition": "Pertaining to the epithelium"
+    },
+    {
+      "id": "ad12",
+      "root": "erythr/o, erythemat/o, erythem/o",
+      "term": "erythema",
+      "term-analysis": "eryth=red",
+      "definition": "Red discolouration of the skin"
+    },
+    {
+      "id": "ad13",
+      "root": "erythr/o, erythemat/o, erythem/o",
+      "term": "erythematous",
+      "term-analysis": "erythemat=red, -ous=pertaining to",
+      "definition": "Pertaining to a redness of the skin"
+    },
+    {
+      "id": "ad14",
+      "root": "hidr/o",
+      "term": "anhidrosis",
+      "term-analysis": "-osis=abnormal condition, a(n)-=no, lack of, hidr=sweat",
+      "definition": "Abnormal condition where there is a lack of sweat"
+    },
+    {
+      "id": "ad15",
+      "root": "hidr/o",
+      "term": "hyperhidrosis",
+      "term-analysis": "hyper-=excessive",
+      "definition": "Condition of excessive sweating"
+    },
+    {
+      "id": "ad16",
+      "root": "kerat/o, keratin/o",
+      "term": "hyperkeratosis",
+      "term-analysis": "hyper-=excessive, -osis=abnormal condition, kerat=hard, hornlike",
+      "definition": "Excessive growth of the horny layer of the skin"
+    },
+    {
+      "id": "ad17",
+      "root": "leuk/o",
+      "term": "leukoderma",
+      "term-analysis": "leuk=white, -derma=skin",
+      "definition": "Lack of pigment in the skin that shows up as white patches"
+    },
+    {
+      "id": "ad18",
+      "root": "melan/o",
+      "term": "melanocyte",
+      "term-analysis": "melan=black, -cyte=cell",
+      "definition": "Cell that produces melanin"
+    },
+    {
+      "id": "ad19",
+      "root": "necr/o",
+      "term": "necrotic",
+      "term-analysis": "necr=death, -cyte=cell",
+      "definition": "Cell that produces melanin"
+    },
+    {
+      "id": "ad20",
+      "root": "onych/o, ungu/o",
+      "term": "onychomycosis",
+      "term-analysis": "onych=nail, -osis=abnormal condition, myc/o=fungus",
+      "definition": "Fungal infection of the nail"
+    },
+    {
+      "id": "ad21",
+      "root": "onych/o, ungu/o",
+      "term": "periungual",
+      "term-analysis": "peri-=around, -al=pertaining to",
+      "definition": "Pertaining to around the nail"
+    },
+    {
+      "id": "ad22",
+      "root": "pil/o, pil/i",
+      "term": "pilosebaceous",
+      "term-analysis": "pilo-=hair, seb=sebum, oil, -ous=pertaining to",
+      "definition": "Pertaining to the hair follicles and the sebaceous glands"
+    },
+    {
+      "id": "ad23",
+      "root": "py/o",
+      "term": "pyoderma",
+      "term-analysis": "py=pus, -derma=skin",
+      "definition": "Any pus producing disease of the skin"
+    },
+    {
+      "id": "ad24",
+      "root": "seb/o",
+      "term": "seborrhea",
+      "term-analysis": "seb=sebum, -rrhea=flow, discharge",
+      "definition": "Increased discharge of sebum from the sebaceous glands"
+    },
+    {
+      "id": "ad25",
+      "root": "vascul/o",
+      "term": "avascular",
+      "term-analysis": "a-=no, lack of, vascul=vessel, -ar=pertaining to",
+      "definition": "Pertaining to lack of blood vessels"
+    },
+    {
+      "id": "ad26",
+      "root": "epi-",
+      "term": "epidermis",
+      "term-analysis": "epi-=upon, above, dermis=dermis",
+      "definition": "Above the dermis"
+    },
+    {
+      "id": "ad27",
+      "root": "-oma",
+      "term": "adenoma",
+      "term-analysis": "aden-=gland, -oma=tumor",
+      "definition": "Tumor of a gland"
+    },
+    {
+      "id": "ad28",
+      "root": "-oma",
+      "term": "carcinoma",
+      "term-analysis": "carcin=cancerous, -oma=tumor",
+      "definition": "Malignant/cancerous tumor"
+    },
+    {
+      "id": "ad29",
+      "root": "-oma",
+      "term": "melanoma",
+      "term-analysis": "melan=black, -oma=tumor",
+      "definition": "A malignant black mole or tumor (a tumor composed of melanin-pigmented cells)"
+    },
+    {
+      "id": "ad30",
+      "root": "-therapy",
+      "term": "cryotherapy",
+      "term-analysis": "cry-=cold, -therapy=treatment",
+      "definition": "Treatment that involves use of cold as its basis"
+    }
+  ],
+  "integumentary-system-vocabulary": [
+    {
+      "id": "v1",
+      "term": "Acne",
+      "definition": "An inflammatory condition of the sebaceous glands and hair follicles; pimples"
+    },
+    {
+      "id": "v2",
+      "term": "Alopecia",
+      "definition": "Loss of hair; baldness"
+    },
+    {
+      "id": "v3",
+      "term": "Burn",
+      "definition": "Injury to tissue caused by heat, fire, lightening or radiation. Burns are classified according to degree or depth of skin damage"
+    },
+    {
+      "id": "v4",
+      "term": "Carbuncle",
+      "definition": "Boil"
+    },
+    {
+      "id": "v5",
+      "term": "Cicatrix",
+      "definition": "Scar"
+    },
+    {
+      "id": "v6",
+      "term": "Comedo",
+      "definition": "Blackhead"
+    },
+    {
+      "id": "v7",
+      "term": "Decubitus ulcer",
+      "definition": "A bed sore"
+    },
+    {
+      "id": "v8",
+      "term": "Exudate",
+      "definition": "Production of pus or sebum"
+    },
+    {
+      "id": "v9",
+      "term": "Herpes simplex",
+      "definition": "Cold sore"
+    },
+    {
+      "id": "v10",
+      "term": "Urticaria",
+      "definition": "Hives"
+    },
+    {
+      "id": "v11",
+      "term": "Nevus",
+      "definition": "Mole"
+    },
+    {
+      "id": "v12",
+      "term": "Pruritus",
+      "definition": "Severe itching"
+    },
+    {
+      "id": "v13",
+      "term": "Tinea",
+      "definition": "Ringworm"
+    },
+    {
+      "id": "v14",
+      "term": "Verruca",
+      "definition": "Wart"
+    }
+  ],
+  "integumentary-syste-abbreviation": [
+    {
+      "id": "a1",
+      "abbreviation": "FUO",
+      "meaning": "Fever of unknown origin"
+    },
+    {
+      "id": "a2",
+      "abbreviation": "Hx",
+      "meaning": "History"
+    },
+    {
+      "id": "a3",
+      "abbreviation": "SLE",
+      "meaning": "Systematic Lupus Erythematosis"
+    },
+    {
+      "id": "a4",
+      "abbreviation": "Ung",
+      "meaning": "Ointment"
+    },
+    {
+      "id": "a5",
+      "abbreviation": "BSE",
+      "meaning": "Breast Self-Examination"
+    }
+  ],
+  "breast": [
+    {
+      "id": "b1",
+      "roots": "fibr/o",
+      "meaning": "fibers, fibrous tissue"
+    },
+    {
+      "id": "b2",
+      "roots": "galact/o",
+      "meaning": "milk"
+    },
+    {
+      "id": "b3",
+      "roots": "lact/o, lact/i",
+      "meaning": "milk"
+    },
+    {
+      "id": "b4",
+      "roots": "mamm/o, mast/o",
+      "meaning": "breast"
+    },
+    {
+      "id": "b5",
+      "roots": "thel/o",
+      "meaning": "nipple"
+    },
+    {
+      "id": "b6",
+      "roots": "top/o",
+      "meaning": "place"
+    }
+  ],
+  "suffix-breast": [
+    {
+      "id": "sb1",
+      "roots": "-arche",
+      "meaning": "beginning"
+    },
+    {
+      "id": "sb2",
+      "roots": "-logy",
+      "meaning": "study of"
+    },
+    {
+      "id": "sb3",
+      "roots": "-opsy",
+      "meaning": "to view"
+    }
+  ],
+  "breast-term-definition": [
+    {
+      "id": "btd1",
+      "word-part": "fibr/o",
+      "term": "fibroid",
+      "term-analysis": "fibr=fibrous tissue, -oid=like",
+      "definition": "Tissue that is similar to fiber"
+    },
+    {
+      "id": "btd2",
+      "word-part": "galact/o, lact/o, lact/i",
+      "term": "galactorrhea",
+      "term-analysis": "galact=milk, -rrhea=discharge, flow",
+      "definition": "Discharge of milk from the breast after breast feeding has stopped"
+    },
+    {
+      "id": "btd3",
+      "word-part": "galact/o, lact/o, lact/i",
+      "term": "lactogenesis",
+      "term-analysis": "lact=milk, -genesis=production",
+      "definition": "Production of milk by the breast"
+    },
+    {
+      "id": "btd4",
+      "word-part": "mamm/o, mast/o",
+      "term": "mammary",
+      "term-analysis": "mamm=breast, -ary=pertaining to",
+      "definition": "Pertaining to the breast"
+    },
+    {
+      "id": "btd5",
+      "word-part": "mamm/o, mast/o",
+      "term": "mammography",
+      "term-analysis": "-plasty=surgical repair",
+      "definition": "X-ray to diagnose problems in the breast"
+    },
+    {
+      "id": "btd6",
+      "word-part": "mamm/o, mast/o",
+      "term": "mammoplasty",
+      "term-analysis": "-plasty=surgical repair",
+      "definition": "Surgical removal of the breast"
+    },
+    {
+      "id": "btd7",
+      "word-part": "mamm/o, mast/o",
+      "term": "mastectomy",
+      "term-analysis": "mast=breast, -ectomy=surgical removal",
+      "definition": "Surgical removal of the breast"
+    },
+    {
+      "id": "btd8",
+      "word-part": "mamm/o, mast/o",
+      "term": "mastitis/mammitis",
+      "term-analysis": "mast/mamm=breast, -itis=inflammation",
+      "definition": "Inflammation of the mammary gland (breast)"
+    },
+    {
+      "id": "btd9",
+      "word-part": "thel/o",
+      "term": "thelitis",
+      "term-analysis": "thel=nipple, -itis=inflammation",
+      "definition": "Inflammation of the nipple"
+    },
+    {
+      "id": "btd10",
+      "word-part": "-logy",
+      "term": "cytology",
+      "term-analysis": "cyt=cell, -logy=study of",
+      "definition": "Study of cells"
+    }
+  ],
+  "musculoskeletal-root": [
+    {
+      "id": "mr1",
+      "roots": "ankyl/o",
+      "meaning": "fusion of parts"
+    },
+    {
+      "id": "mr2",
+      "roots": "articul/o, arthr/o",
+      "meaning": "joint"
+    },
+    {
+      "id": "mr3",
+      "roots": "burs/o",
+      "meaning": "bursa"
+    },
+    {
+      "id": "mr4",
+      "roots": "carp/o",
+      "meaning": "wrist bone"
+    },
+    {
+      "id": "mr5",
+      "roots": "cervic/o",
+      "meaning": "neck"
+    },
+    {
+      "id": "mr6",
+      "roots": "chondr/o",
+      "meaning": "cartilage"
+    },
+    {
+      "id": "mr7",
+      "roots": "clavicul/o",
+      "meaning": "clavicle, collarbone"
+    },
+    {
+      "id": "mr8",
+      "roots": "coccyg/o",
+      "meaning": "coccyx, tailbone"
+    },
+    {
+      "id": "mr9",
+      "roots": "cost/o",
+      "meaning": "rib"
+    },
+    {
+      "id": "mr10",
+      "roots": "crani/o",
+      "meaning": "skull"
+    },
+    {
+      "id": "mr11",
+      "roots": "duct/o",
+      "meaning": "draw away"
+    },
+    {
+      "id": "mr12",
+      "roots": "electr/o",
+      "meaning": "electric, electricity"
+    },
+    {
+      "id": "mr13",
+      "roots": "fasci/o",
+      "meaning": "fascia"
+    },
+    {
+      "id": "mr14",
+      "roots": "femor/o",
+      "meaning": "femur, thigh bone"
+    },
+    {
+      "id": "mr15",
+      "roots": "fibr/o, fibros/o",
+      "meaning": "fibers"
+    },
+    {
+      "id": "mr16",
+      "roots": "fibul/o",
+      "meaning": "fibula"
+    },
+    {
+      "id": "mr17",
+      "roots": "flex/o",
+      "meaning": "flexion, bend"
+    },
+    {
+      "id": "mr18",
+      "roots": "humer/o",
+      "meaning": "humerus, upper arm"
+    },
+    {
+      "id": "mr19",
+      "roots": "ili/o",
+      "meaning": "hip"
+    },
+    {
+      "id": "mr20",
+      "roots": "ischi/o",
+      "meaning": "ischium (posterior part of hip)"
+    },
+    {
+      "id": "mr21",
+      "roots": "kinesi/o",
+      "meaning": "movement"
+    },
+    {
+      "id": "mr22",
+      "roots": "lumb/o",
+      "meaning": "lower back"
+    },
+    {
+      "id": "mr23",
+      "roots": "mandibul/o",
+      "meaning": "mandible, lower jaw"
+    },
+    {
+      "id": "mr24",
+      "roots": "maxill/o",
+      "meaning": "maxilla, upper jaw"
+    },
+    {
+      "id": "mr25",
+      "roots": "medull/o",
+      "meaning": "marrow, inner portion of an organ"
+    },
+    {
+      "id": "mr26",
+      "roots": "metacarp/o",
+      "meaning": "metacarpals (bones of the hand)"
+    },
+    {
+      "id": "mr27",
+      "roots": "metatars/o",
+      "meaning": "metatarsals (bones of the foot)"
+    },
+    {
+      "id": "mr28",
+      "roots": "muscul/o, my/o, myos/o",
+      "meaning": "muscle"
+    },
+    {
+      "id": "mr29",
+      "roots": "myel/o",
+      "meaning": "bone marrow, spinal cord"
+    },
+    {
+      "id": "mr30",
+      "roots": "occipit/o",
+      "meaning": "occiput (back part of the head)"
+    },
+    {
+      "id": "mr31",
+      "roots": "osse/o, oste/o, oss/e, oss/i",
+      "meaning": "bone"
+    },
+    {
+      "id": "mr32",
+      "roots": "pariet/o",
+      "meaning": "parietal bone of the head"
+    },
+    {
+      "id": "mr33",
+      "roots": "patell/a, patell/o",
+      "meaning": "patella, kneecap"
+    },
+    {
+      "id": "mr34",
+      "roots": "pelv/i, pelv/o",
+      "meaning": "pelvis"
+    },
+    {
+      "id": "mr35",
+      "roots": "phalang/o",
+      "meaning": "phalanges, bone of the fingers or toes"
+    },
+    {
+      "id": "mr36",
+      "roots": "radi/o",
+      "meaning": "radius, bone of the lower arm"
+    },
+    {
+      "id": "mr37",
+      "roots": "radicul/o",
+      "meaning": "nerve root"
+    },
+    {
+      "id": "mr38",
+      "roots": "sacr/o",
+      "meaning": "sacrum"
+    },
+    {
+      "id": "mr40",
+      "roots": "scapul/o",
+      "meaning": "scapula"
+    },
+    {
+      "id": "mr41",
+      "roots": "spondyl/o, vertebr/o",
+      "meaning": "vertebra"
+    },
+    {
+      "id": "mr42",
+      "roots": "stern/o",
+      "meaning": "sternum, breastbone"
+    },
+    {
+      "id": "mr43",
+      "roots": "synov/i, synov/o",
+      "meaning": "sternum, synovial fluid that lubricates"
+    },
+    {
+      "id": "mr44",
+      "roots": "tempor/o",
+      "meaning": "temporal bone of the head"
+    },
+    {
+      "id": "mr45",
+      "roots": "tendin/o, ten/o, tend/o",
+      "meaning": "tendon"
+    },
+    {
+      "id": "mr46",
+      "roots": "tens/o",
+      "meaning": "stretch out"
+    },
+    {
+      "id": "mr47",
+      "roots": "thorac/o",
+      "meaning": "chest"
+    },
+    {
+      "id": "mr48",
+      "roots": "tibi/o",
+      "meaning": "tibia, bone of the lower leg"
+    }
+  ],
+  "musculoskeletal-suffix": [
+    {
+      "id": "ms1",
+      "suffix": "-asthenia",
+      "meaning": "no strength, weakness"
+    },
+    {
+      "id": "ms2",
+      "suffix": "-centesis",
+      "meaning": "surgical puncture to remove fluid"
+    },
+    {
+      "id": "ms3",
+      "suffix": "-clasis",
+      "meaning": "surgical fracture or refracture"
+    },
+    {
+      "id": "ms4",
+      "suffix": "-clast",
+      "meaning": "break, broken"
+    },
+    {
+      "id": "ms5",
+      "suffix": "-clonus",
+      "meaning": "turmoil"
+    },
+    {
+      "id": "ms6",
+      "suffix": "-desis",
+      "meaning": "surgical fusion or binding"
+    },
+    {
+      "id": "ms7",
+      "suffix": "-kinesis",
+      "meaning": "movement"
+    },
+    {
+      "id": "ms8",
+      "suffix": "-lysis",
+      "meaning": "set free, breakdown, destruction"
+    },
+    {
+      "id": "ms9",
+      "suffix": "-malacia",
+      "meaning": "softening"
+    },
+    {
+      "id": "ms10",
+      "suffix": "-osis",
+      "meaning": "abnormal condition"
+    },
+    {
+      "id": "ms11",
+      "suffix": "-paresis",
+      "meaning": "partial paralysis"
+    },
+    {
+      "id": "ms12",
+      "suffix": "-plegia",
+      "meaning": "paralysis"
+    },
+    {
+      "id": "ms13",
+      "suffix": "-porosis",
+      "meaning": "porous open spaces"
+    },
+    {
+      "id": "ms14",
+      "suffix": "-thermy",
+      "meaning": "heat"
+    },
+    {
+      "id": "ms15",
+      "suffix": "-trophy",
+      "meaning": "nourishment, development,growth"
+    }
+  ],
+  "musculoskelital-prefixes": [
+    {
+      "id": "mp1",
+      "prefix": "ab-",
+      "meaning": "away from"
+    },
+    {
+      "id": "mp2",
+      "prefix": "ad-",
+      "meaning": "toward"
+    },
+    {
+      "id": "mp3",
+      "prefix": "bi-",
+      "meaning": "two"
+    },
+    {
+      "id": "mp4",
+      "prefix": "brady-",
+      "meaning": "slow"
+    },
+    {
+      "id": "mp5",
+      "prefix": "ex-",
+      "meaning": "extension, away from"
+    },
+    {
+      "id": "mp6",
+      "prefix": "hemi-",
+      "meaning": "half"
+    },
+    {
+      "id": "mp7",
+      "prefix": "ortho-",
+      "meaning": "straight"
+    },
+    {
+      "id": "mp8",
+      "prefix": "quadr-",
+      "meaning": "four"
+    },
+    {
+      "id": "mp9",
+      "prefix": "tri-",
+      "meaning": "three"
+    }
+  ],
+  "musculoskeletal-analysis-definition": [
+    {
+      "id": "mad1",
+      "word": "articul/o, arthr/o",
+      "term": "articular",
+      "analysis": "articul=joint, -ar=pertaining to",
+      "definition": "Pertaining to a joint"
+    },
+    {
+      "id": "mad2",
+      "word": "articul/o, arthr/o",
+      "term": "arthralgia",
+      "analysis": "arthr=joint, -algia=pain",
+      "definition": "Painful joint"
+    },
+    {
+      "id": "mad3",
+      "word": "articul/o, arthr/o",
+      "term": "arthritis",
+      "analysis": "-itis=inflammation",
+      "definition": "Inflammation of a joint"
+    },
+    {
+      "id": "mad4",
+      "word": "articul/o, arthr/o",
+      "term": "arthropathy",
+      "analysis": "-pathy=disease",
+      "definition": "Disease of a joint"
+    },
+    {
+      "id": "mad5",
+      "word": "articul/o, arthr/o",
+      "term": "arthroplasty",
+      "analysis": "-plasty=surgical repair",
+      "definition": "Surgical repair of a joint"
+    },
+    {
+      "id": "mad6",
+      "word": "articul/o, arthr/o",
+      "term": "arthroscopy",
+      "analysis": "-scopy=examination using a scope",
+      "definition": "Examination of a joint using a scope"
+    },
+    {
+      "id": "mad7",
+      "word": "carp/o",
+      "term": "carpal",
+      "analysis": "carp/o=wrist, -al=pertaining to",
+      "definition": "Pertaining to the wrist"
+    },
+    {
+      "id": "mad8",
+      "word": "cervic/o",
+      "term": "cervical",
+      "analysis": "cervic=neck, -al=pertaining to",
+      "definition": "Pertaining to the neck"
+    },
+    {
+      "id": "mad9",
+      "word": "chondr/o",
+      "term": "chondrocyte",
+      "analysis": "chondr=cartilage, -cyte=cell",
+      "definition": "Cartilage cells"
+    },
+    {
+      "id": "mad10",
+      "word": "chondr/o",
+      "term": "chondroma",
+      "analysis": "-oma=tumor",
+      "definition": "Tumor of the cartilage"
+    },
+    {
+      "id": "mad11",
+      "word": "chondr/o",
+      "term": "chondrosarcoma",
+      "analysis": "-sarcoma=malignant tumor",
+      "definition": "Malignant tumor of the cartilage"
+    },
+    {
+      "id": "mad12",
+      "word": "clavicul/o",
+      "term": "clavicular",
+      "analysis": "clavicul=collarbone, clavicle, -ar=pertaining to",
+      "definition": "Pertainign to the collarbone"
+    },
+    {
+      "id": "mad13",
+      "word": "cost/o",
+      "term": "costal",
+      "analysis": "cost=rib, -al=pertaining to",
+      "definition": "Pertaning to the ribs"
+    },
+    {
+      "id": "mad14",
+      "word": "cost/o",
+      "term": "costovertebral",
+      "analysis": "vertebr=vertebrae",
+      "definition": "Pertaining to the ribs and vertebrae"
+    },
+    {
+      "id": "mad15",
+      "word": "crani/o",
+      "term": "craniotomy",
+      "analysis": "crani=skull, -tomy=surgical incision",
+      "definition": "Surgical incision into the skull"
+    },
+    {
+      "id": "mad16",
+      "word": "crani/o",
+      "term": "craniofacial",
+      "analysis": "-faci=face, -al=pertaining to",
+      "definition": "Pertaining to the skull and face"
+    },
+    {
+      "id": "mad17",
+      "word": "fasci/o",
+      "term": "fascial",
+      "analysis": "fasci=fascia (band of tissue around muscle), -al=pertaining to",
+      "definition": "Pertaining to fascia"
+    },
+    {
+      "id": "mad18",
+      "word": "fasci/o",
+      "term": "fascitis",
+      "analysis": "-itis=inflammation",
+      "definition": "Inflammation of fascia"
+    },
+    {
+      "id": "mad19",
+      "word": "femor/o",
+      "term": "femoral",
+      "analysis": "femor=femur, thigh bone, -al=pertaining to",
+      "definition": "Pertaining to the thighbone"
+    },
+    {
+      "id": "mad20",
+      "word": "fibul/o",
+      "term": "fibular",
+      "analysis": "fibul=fibula, -ar=pertaining to",
+      "definition": "Pertaining to fibula"
+    },
+    {
+      "id": "mad21",
+      "word": "fibr/o, fibros/o",
+      "term": "fibrous",
+      "analysis": "fibr/o=fiber, -ous=pertaining to",
+      "definition": "Pertaining to fibrous tissue"
+    },
+    {
+      "id": "mad22",
+      "word": "humer/o",
+      "term": "humeral",
+      "analysis": "humer=humerous, upper arm, -al=pertaining to",
+      "definition": "Pertaining to the upper arm"
+    },
+    {
+      "id": "mad23",
+      "word": "ili/o",
+      "term": "iliac",
+      "analysis": "ili=hip, -ac=pertaining to",
+      "definition": "Pertaning to the hip"
+    },
+    {
+      "id": "mad24",
+      "word": "ili/o",
+      "term": "iliosacral",
+      "analysis": "sacr=sacrum, -al=pertaining to",
+      "definition": "Pertaining to the hip and sacrum"
+    },
+    {
+      "id": "mad25",
+      "word": "ischi/o",
+      "term": "ischial",
+      "analysis": "ischi=ischium, -al=pertaining to",
+      "definition": "Pertaining to the ischium"
+    },
+    {
+      "id": "mad26",
+      "word": "ischi/o",
+      "term": "ischiorectal",
+      "analysis": "rect=rectum",
+      "definition": "Pertaining to the rectum"
+    },
+    {
+      "id": "mad27",
+      "word": "kinesi/o",
+      "term": "kinesiology",
+      "analysis": "kinesi=movement, -logy=study of",
+      "definition": "Study of movement"
+    },
+    {
+      "id": "mad28",
+      "word": "lumb/o",
+      "term": "lumbosacral",
+      "analysis": "lumbo=lower back, sacr=sacrum, -al=pertaining to",
+      "definition": "Pertaining to the lower back and sacrum"
+    },
+    {
+      "id": "mad29",
+      "word": "mandibul/o",
+      "term": "mandibular",
+      "analysis": "mandibul=mandible, lower jaw, ar-=pertaining to",
+      "definition": "Pertaining to the lower jaw"
+    },
+    {
+      "id": "mad30",
+      "word": "maxill/o",
+      "term": "maxillary",
+      "analysis": "maxill=maxilla, upper jaw, -ary=pertaining to",
+      "definition": "Pertaining to the upper jaw"
+    },
+    {
+      "id": "mad31",
+      "word": "metacarp/o",
+      "term": "metacarpal",
+      "analysis": "metacarp=bones of the hand, -al=pertaining to",
+      "definition": "Pertaining to the bones of the hand"
+    },
+    {
+      "id": "mad32",
+      "word": "metatars/o",
+      "term": "metatarsal",
+      "analysis": "metatars=bones of the foot, -al=pertaining to",
+      "definition": "Pertaining to the bones of the foot"
+    },
+    {
+      "id": "mad33",
+      "word": "my/o, muscul/o, myos/o",
+      "term": "muscular",
+      "analysis": "muscul=muscle, -ar=pertaining to",
+      "definition": "Pertaining to muscle"
+    },
+    {
+      "id": "mad34",
+      "word": "my/o, muscul/o, myos/o",
+      "term": "myalgia",
+      "analysis": "my=muscle, -algia=pain",
+      "definition": "Pain in a muscle"
+    },
+    {
+      "id": "mad35",
+      "word": "my/o, muscul/o, myos/o",
+      "term": "myopathy",
+      "analysis": "-pathy=disease",
+      "definition": "Muscle disease"
+    },
+    {
+      "id": "mad36",
+      "word": "myel/o",
+      "term": "myeloma",
+      "analysis": "myel=bone marrow, spinal cord -oma-tumor",
+      "definition": "Tumor of the bone marrow or spinal cord"
+    },
+    {
+      "id": "mad37",
+      "word": "myel/o",
+      "term": "osteomyelitis",
+      "analysis": "oste/o=bone, -itis-inflammation",
+      "definition": "Inflammation of the bone and bone marrow"
+    },
+    {
+      "id": "mad38",
+      "word": "oste/o, oss/e, oss/i",
+      "term": "osteoblast",
+      "analysis": "oste/o=bone, -blast=immature",
+      "definition": "Immature bone cell"
+    },
+    {
+      "id": "mad39",
+      "word": "oste/o, oss/e, oss/i",
+      "term": "osteochondritis",
+      "analysis": "-itis=inflammation, chondr/o-cartilage",
+      "definition": "Inflammation of bone and cartilage"
+    },
+    {
+      "id": "mad",
+      "word": "",
+      "term": "",
+      "analysis": "",
+      "definition": ""
     }
   ]
 }
