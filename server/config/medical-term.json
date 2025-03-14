@@ -3000,11 +3000,919 @@
       "definition": "Inflammation of bone and cartilage"
     },
     {
-      "id": "mad",
-      "word": "",
+      "id": "mad40",
+      "word": "oste/o, oss/e, oss/i",
+      "term": "osteocyte",
+      "analysis": "-itis=inflammation, chondr/o=cartilage",
+      "definition": "Inflammation of bone and cartilage"
+    },
+    {
+      "id": "mad41",
+      "word": "oste/o, oss/e, oss/i",
+      "term": "osteoma",
+      "analysis": "-oma=tumor, -sarcoma=malignant tumor",
+      "definition": "Tumor of the bone"
+    },
+    {
+      "id": "mad42",
+      "word": "oste/o, oss/e, oss/i",
+      "term": "osteosarcoma",
+      "analysis": "-sarcoma=malignant tumor",
+      "definition": "Malignant tumor of the bone"
+    },
+    {
+      "id": "mad43",
+      "word": "patell/a, patell/o",
+      "term": "patellar",
+      "analysis": "patell=kneecap, -ar=pertaining to",
+      "definition": "Pertaining to the kneecap"
+    },
+    {
+      "id": "mad44",
+      "word": "patell/a, patell/o",
+      "term": "infrapatellar",
+      "analysis": "infra-=below, supra-=above",
+      "definition": "Pertaining to above the kneecap"
+    },
+    {
+      "id": "mad45",
+      "word": "patell/a, patell/o",
+      "term": "suprapatellar",
+      "analysis": "supra-=above",
+      "definition": "Pertaining to the pelvis"
+    },
+    {
+      "id": "mad46",
+      "word": "pelv/i, pelv/o",
+      "term": "pelvic",
+      "analysis": "pelv=pelvic, -ic=pertaining to",
+      "definition": "Pertaining to the pelvis"
+    },
+    {
+      "id": "mad47",
+      "word": "pelv/i, pelv/o",
+      "term": "pelvimeter",
+      "analysis": "-meter=instrument used to measure",
+      "definition": "Instrument used to measure the size of the pelvis"
+    },
+    {
+      "id": "mad48",
+      "word": "phalang/o",
+      "term": "interphalangeal",
+      "analysis": "inter-=between, phalang=one of the bones of the fingers or toes, -eal=pertaining to",
+      "definition": "Pertaining to the bones of the fingers or toes"
+    },
+    {
+      "id": "mad49",
+      "word": "sacr/o",
+      "term": "sacral",
+      "analysis": "sacr=sacrum, -al=pertaining to",
+      "definition": "Pertaining to the sacrum"
+    },
+    {
+      "id": "mad50",
+      "word": "scapul/o",
+      "term": "subscapular",
+      "analysis": "sub-=below, scapul=scapula, -ar=pertaining to",
+      "definition": "Pertaining to below the scapula"
+    },
+    {
+      "id": "mad51",
+      "word": "spondyl/o",
+      "term": "spondylitis",
+      "analysis": "spondyl=vertebra, -itis=inflammation",
+      "definition": "Inflammation of the vertebra"
+    },
+    {
+      "id": "mad52",
+      "word": "spondyl/o",
+      "term": "spondylopathy",
+      "analysis": "-pathy=disease",
+      "definition": "Disease of the vertebra"
+    },
+    {
+      "id": "mad53",
+      "word": "stern/o",
+      "term": "sternal",
+      "analysis": "stern=breastbone, sternum, -al=pertaining to",
+      "definition": "Pertaining to the breastbone"
+    },
+    {
+      "id": "mad54",
+      "word": "stern/o",
+      "term": "costosternal",
+      "analysis": "cost=rib",
+      "definition": "Pertaining to the ribs and breastbone"
+    },
+    {
+      "id": "mad55",
+      "word": "synov/i, senov/o",
+      "term": "synovial",
+      "analysis": "synov=synovial membrane/fluid, -al=pertaining to",
+      "definition": "Pertaining to the synovial membrane or the fluid that lubricates the joint"
+    },
+    {
+      "id": "mad56",
+      "word": "tendin/o, ten/o, tend/o",
+      "term": "tendinitis",
+      "analysis": "tendin=tendon, -itis=inflammation",
+      "definition": "Inflammation of a tendon"
+    },
+    {
+      "id": "mad57",
+      "word": "tendin/o, ten/o, tend/o",
+      "term": "tenodesis",
+      "analysis": "-desis=surgical fusion",
+      "definition": "Surgical fusion of a tendon"
+    },
+    {
+      "id": "mad58",
+      "word": "thorac/o",
+      "term": "thoracic",
+      "analysis": "thorac=chest, -ic=pertaining to",
+      "definition": "Pertaining to the chest"
+    },
+    {
+      "id": "mad59",
+      "word": "tibi/o",
+      "term": "tibiofibular",
+      "analysis": "tibi=tibia, fibul=fibula, -ar=pertaining to",
+      "definition": "Pertaining to the tibia and fibula"
+    },
+    {
+      "id": "mad60",
+      "word": "ton/o",
+      "term": "atonic",
+      "analysis": "a=without, no, ton=tone, -ic=pertaining to",
+      "definition": "Pertaining to no tone"
+    },
+    {
+      "id": "mad61",
+      "word": "ton/o",
+      "term": "hypertonic",
+      "analysis": "hyper=excessive",
+      "definition": "Pertaining to excessive tone"
+    },
+    {
+      "id": "mad62",
+      "word": "uln/o",
+      "term": "ulnar",
+      "analysis": "uln=ulnar, bone of the lower arm, -ar=pertaining to",
+      "definition": "Pertaining to the bone of the lower arm"
+    },
+    {
+      "id": "mad63",
+      "word": "vertebr/o",
+      "term": "vertebrofemoral",
+      "analysis": "vertebr=vertebra, femor=femur, -al=pertaining to",
+      "definition": "Pertaining to the vertebrae and femur"
+    },
+    {
+      "id": "mad64",
+      "word": "-centesis",
+      "term": "arthrocentesis",
+      "analysis": "arthro=joint, -centesis=surgical puncture",
+      "definition": "Surgical puncture into a joint to remove fluid"
+    },
+    {
+      "id": "mad65",
+      "word": "-clasis",
+      "term": "osteoclasis",
+      "analysis": "oste=bone, -clasis=surgical fracture",
+      "definition": "Surgical fracture of a bone"
+    },
+    {
+      "id": "mad66",
+      "word": "-clast",
+      "term": "osteoclast",
+      "analysis": "oste=bone, -clast=breakdown",
+      "definition": "Cell which breaks down bone"
+    },
+    {
+      "id": "mad67",
+      "word": "-desis",
+      "term": "arthrodesis",
+      "analysis": "arthr=joint, -desis=surgical fusion",
+      "definition": "Surgical fusion of a joint"
+    },
+    {
+      "id": "mad68",
+      "word": "-malacia",
+      "term": "osteomalacia",
+      "analysis": "oste=bone, -malacia=softening",
+      "definition": "Softening of the bone"
+    },
+    {
+      "id": "mad69",
+      "word": "-osis",
+      "term": "kyphosis",
+      "analysis": "kyph=humpback, -osis=abnormal condition",
+      "definition": "Abnormal curvature of the spine"
+    },
+    {
+      "id": "mad70",
+      "word": "-osis",
+      "term": "osteoporosis",
+      "analysis": "oste=bone, -porosis=porous",
+      "definition": "Abnormal condition where bone becomes too porous"
+    },
+    {
+      "id": "mad71",
+      "word": "ortho-",
+      "term": "Orthopedics",
+      "analysis": "ortho-=straight, ped=child, -ic=pertaining to",
+      "definition": "Surgical speciality dealing with correction of deformities of the skeletal system"
+    }
+  ],
+  "musculoskeletal-analysys-definition": [
+    {
+      "id": "mad1",
+      "term": "Arth",
+      "meaning": ""
+    },
+    {
+      "id": "",
       "term": "",
-      "analysis": "",
-      "definition": ""
+      "meaning": ""
+    },
+    {
+      "id": "",
+      "term": "",
+      "meaning": ""
+    },
+    {
+      "id": "",
+      "term": "",
+      "meaning": ""
+    },
+    {
+      "id": "",
+      "term": "",
+      "meaning": ""
+    },
+    {
+      "id": "",
+      "term": "",
+      "meaning": ""
+    },
+    {
+      "id": "",
+      "term": "",
+      "meaning": ""
+    },
+    {
+      "id": "",
+      "term": "",
+      "meaning": ""
+    }
+  ],
+  "roots-nervous-system": [
+    {
+      "id": "rns1",
+      "root": "ax/o",
+      "meaning": "axon"
+    },
+    {
+      "id": "rns2",
+      "root": "cephal/o",
+      "meaning": "head"
+    },
+    {
+      "id": "rns3",
+      "root": "cerebell/o",
+      "meaning": "cerebellum"
+    },
+    {
+      "id": "rns4",
+      "root": "cortic/o",
+      "meaning": "cortex, outer covering"
+    },
+    {
+      "id": "rns5",
+      "root": "dendr/o",
+      "meaning": "dendrite"
+    },
+    {
+      "id": "rns6",
+      "root": "dur/o",
+      "meaning": "dura mater"
+    },
+    {
+      "id": "rns7",
+      "root": "encephal/o, cerebr/o",
+      "meaning": "brain"
+    },
+    {
+      "id": "rns8",
+      "root": "gangli/o, ganglion/o",
+      "meaning": "ganglion"
+    },
+    {
+      "id": "rns9",
+      "root": "hydr/o",
+      "meaning": "water"
+    },
+    {
+      "id": "rns10",
+      "root": "magnet/o",
+      "meaning": "magnet"
+    },
+    {
+      "id": "rns11",
+      "root": "medull/o",
+      "meaning": "medulla, inner section"
+    },
+    {
+      "id": "rns12",
+      "root": "mening/o, meningi/o",
+      "meaning": "meninges, membrane"
+    },
+    {
+      "id": "rns13",
+      "root": "myel/o",
+      "meaning": "spinal cord, bone marrow"
+    },
+    {
+      "id": "rns14",
+      "root": "narc/o",
+      "meaning": "numbness"
+    },
+    {
+      "id": "rns15",
+      "root": "neur/o, neur/i",
+      "meaning": "nerve"
+    },
+    {
+      "id": "rns16",
+      "root": "noct/i",
+      "meaning": "night"
+    },
+    {
+      "id": "rns17",
+      "root": "radicul/o",
+      "meaning": "nerve root"
+    },
+    {
+      "id": "rns18",
+      "root": "somn/i, somn/o",
+      "meaning": "sleep"
+    },
+    {
+      "id": "rns19",
+      "root": "spin/o",
+      "meaning": "spine"
+    },
+    {
+      "id": "rns20",
+      "root": "synaps/o, synapt/o",
+      "meaning": "synapse"
+    },
+    {
+      "id": "rns21",
+      "root": "thalam/o",
+      "meaning": "thalamus"
+    }
+  ],
+
+  "suffixes-nervous-system": [
+    {
+      "id": "sns1",
+      "suffix": "-algia, -dynia",
+      "meaning": "pain"
+    },
+    {
+      "id": "sns2",
+      "suffix": "-cele",
+      "meaning": "hernia, protrusion"
+    },
+    {
+      "id": "sns3",
+      "suffix": "-ectomy",
+      "meaning": "removal"
+    },
+    {
+      "id": "sns4",
+      "suffix": "-esthesia",
+      "meaning": "sensation, feeling"
+    },
+    {
+      "id": "sns5",
+      "suffix": "-graphy",
+      "meaning": "process of recording, producing images"
+    },
+    {
+      "id": "sns6",
+      "suffix": "-kinesia, -kinesis",
+      "meaning": "movement, motion"
+    },
+    {
+      "id": "sns7",
+      "suffix": "-oma",
+      "meaning": "tumor"
+    },
+    {
+      "id": "sns8",
+      "suffix": "-phasia",
+      "meaning": "speech"
+    },
+    {
+      "id": "sns9",
+      "suffix": "-plegia",
+      "meaning": "paralysis, loss of motor function"
+    },
+    {
+      "id": "sns10",
+      "suffix": "-taxia",
+      "meaning": "order"
+    }
+  ],
+  "prefixes-nervous-sytem": [
+    {
+      "id": "pns1",
+      "prefix": "de-",
+      "meaning": "lack of, removal"
+    },
+    {
+      "id": "pns2",
+      "prefix": "epi-",
+      "meaning": "above, upon"
+    },
+    {
+      "id": "pns3",
+      "prefix": "pachy-",
+      "meaning": "thick"
+    },
+    {
+      "id": "pns4",
+      "prefix": "sub-",
+      "meaning": "below"
+    }
+  ],
+  "nervous-system-term-analysis-definition": [
+    {
+      "id": "nsad1",
+      "word-part": "cerebello/o",
+      "term": "cerebellar",
+      "analysis": "cerebell = cerebellum, -a = pertaining to",
+      "definition": "Pertaining to the cerebellum"
+    },
+    {
+      "id": "nsad2",
+      "word-part": "cerebr/o, encephal/o",
+      "term": "cerebral",
+      "analysis": "cerebr = brain, -al = pertaining to",
+      "definition": "Pertaining to the brain"
+    },
+    {
+      "id": "nsad3",
+      "word-part": "cerebr/o, encephal/o",
+      "term": "cerebrospinal",
+      "analysis": "spin = spine",
+      "definition": "Pertaining to the brain and spine"
+    },
+    {
+      "id": "nsad4",
+      "word-part": "cerebr/o, encephal/o",
+      "term": "cerebrovascular",
+      "analysis": "vascul = vessel, -ar = pertaining to",
+      "definition": "Pertaining to the brain and blood vessels"
+    },
+    {
+      "id": "nsad5",
+      "word-part": "cerebr/o, encephal/o",
+      "term": "encephalitis",
+      "analysis": "encephal = brain, -itis = inflammation",
+      "definition": "Inflammation of the brain"
+    },
+    {
+      "id": "nsad6",
+      "word-part": "cerebr/o, encephal/o",
+      "term": "encephalomalacia",
+      "analysis": "-malacia = softening",
+      "definition": "Softening of the brain"
+    },
+    {
+      "id": "nsad7",
+      "word-part": "cortic/o",
+      "term": "cortical",
+      "analysis": "cortic = cortex, outer covering, -al = pertaining to",
+      "definition": "Pertaining to the cortex"
+    },
+    {
+      "id": "nsad8",
+      "word-part": "cortic/o",
+      "term": "corticospinal",
+      "analysis": "spin = spine",
+      "definition": "Pertaining to the cortex and spine"
+    },
+    {
+      "id": "nsad9",
+      "word-part": "dur/o",
+      "term": "epidural",
+      "analysis": "epi = on, upon, above, dur = dura mater, -al = pertaining to",
+      "definition": "Pertaining to above the dura mater"
+    },
+    {
+      "id": "nsad10",
+      "word-part": "dur/o",
+      "term": "subdural",
+      "analysis": "sub = below, under",
+      "definition": "Pertaining to under the dura mater"
+    },
+    {
+      "id": "nsad11",
+      "word-part": "hydr/o",
+      "term": "Hydrocephalus",
+      "analysis": "hydr = water, cephal = head, -us = pertaining to",
+      "definition": "Pertaining to an accumulation of fluid in the brain"
+    },
+    {
+      "id": "nsad12",
+      "word-part": "mening/o, meningi/o",
+      "term": "meningitis",
+      "analysis": "mening = meninges, -itis = inflammation",
+      "definition": "Inflammation of the meninges"
+    },
+    {
+      "id": "nsad13",
+      "word-part": "mening/o, meningi/o",
+      "term": "meningoencephalitis",
+      "analysis": "encephal = brain",
+      "definition": "Inflammation of the meninges and the brain"
+    },
+    {
+      "id": "nsad14",
+      "word-part": "myel/o",
+      "term": "myelogram",
+      "analysis": "myel = spinal cord, bone marrow, -gram = record",
+      "definition": "Record of the spinal cord"
+    },
+    {
+      "id": "nsad15",
+      "word-part": "myel/o",
+      "term": "poliomyelitis",
+      "analysis": "-itis = inflammation, polio = gray",
+      "definition": "Inflammation of the gray matter of the spinal cord"
+    },
+    {
+      "id": "nsad16",
+      "word-part": "neur/o, neur/i",
+      "term": "myoneural",
+      "analysis": "my = muscle, -al = pertaining to, neur = nerve",
+      "definition": "Pertaining to the muscle and nerve"
+    },
+    {
+      "id": "nsad17",
+      "word-part": "neur/o, neur/i",
+      "term": "neuralgia",
+      "analysis": "-algia = pain",
+      "definition": "Nerve pain"
+    },
+    {
+      "id": "nsad18",
+      "word-part": "neur/o, neur/i",
+      "term": "neurology",
+      "analysis": "-logy = study of",
+      "definition": "Study of the nervous system"
+    },
+    {
+      "id": "nsad19",
+      "word-part": "neur/o, neur/i",
+      "term": "neurologist",
+      "analysis": "-logist = one who specializes in the study of",
+      "definition": "A specialist in the diagnosis and treatment of nervous system diseases"
+    },
+    {
+      "id": "nsad20",
+      "word-part": "neur/o, neur/i",
+      "term": "neurolysis",
+      "analysis": "-lysis = destruction, breakdown",
+      "definition": "Nerve destruction"
+    },
+    {
+      "id": "nsad21",
+      "word-part": "radicul/o",
+      "term": "myeloradiculitis",
+      "analysis": "myel = spinal cord, radicul = nerve root, -itis = inflammation",
+      "definition": "Inflammation of the spinal cord and nerve roots"
+    },
+    {
+      "id": "nsad22",
+      "word-part": "spin/o",
+      "term": "spinal",
+      "analysis": "spin = spine, -al = pertaining to",
+      "definition": "Pertaining to the spine"
+    },
+    {
+      "id": "nsad23",
+      "word-part": "thalam/o",
+      "term": "thalamocortical",
+      "analysis": "thalam = thalamus, cortic = cortex, -al = pertaining to",
+      "definition": "Pertaining to the thalamus and cerebral cortex"
+    },
+    {
+      "id": "nsad24",
+      "word-part": "ventricul/o",
+      "term": "ventriculostomy",
+      "analysis": "ventric = ventricles, -stomy = permanent new opening",
+      "definition": "Creatining a permanent new opening into the ventricles"
+    },
+    {
+      "id": "nsad25",
+      "word-part": "-algia",
+      "term": "cephalalgia",
+      "analysis": "cephal = head, -algia = pain",
+      "definition": "A pain in the head (headache)"
+    },
+    {
+      "id": "nsad26",
+      "word-part": "-cele",
+      "term": "encephalocele",
+      "analysis": "encephal = brain, -cele = hernia",
+      "definition": "Hernia of the brain"
+    },
+    {
+      "id": "nsad27",
+      "word-part": "-cele",
+      "term": "meningocele",
+      "analysis": "mening = meninges",
+      "definition": "Hernia of the meninges"
+    },
+    {
+      "id": "nsad28",
+      "word-part": "-cele",
+      "term": "myelomeningocele",
+      "analysis": "myel - spinal cord",
+      "definition": "Hernia of the spinal cord and meninges"
+    },
+    {
+      "id": "nsad29",
+      "word-part": "-ectomy",
+      "term": "lobectomy",
+      "analysis": "lobe = lobe, -ectomy = surgical excision",
+      "definition": "Surgical excision of a lobe of the brain"
+    },
+    {
+      "id": "nsad30",
+      "word-part": "-ectomy",
+      "term": "craniectomy",
+      "analysis": "crani = skull",
+      "definition": "Surgical removal of a part of the skull"
+    },
+    {
+      "id": "nsad31",
+      "word-part": "-esthesia",
+      "term": "anesthesia",
+      "analysis": "an = no, not, -esthesia = sensation",
+      "definition": "No sensation"
+    },
+    {
+      "id": "nsad32",
+      "word-part": "-esthesia",
+      "term": "hypoesthesia",
+      "analysis": "hypo = below, under",
+      "definition": "Decreased sensation"
+    },
+    {
+      "id": "nsad33",
+      "word-part": "-esthesia",
+      "term": "hyperesthesia",
+      "analysis": "hyper = excessive, above",
+      "definition": "Increased sensation"
+    },
+    {
+      "id": "nsad34",
+      "word-part": "-esthesia",
+      "term": "paresthesia",
+      "analysis": "para = abnormal",
+      "definition": "Abnormal sensation"
+    },
+    {
+      "id": "nsad35",
+      "word-part": "-graphy",
+      "term": "cerebral angiography",
+      "analysis": "cereb = brain, -al = pertaining to, angi = vessel, -graphy = process of recording",
+      "definition": "Graphic X-ray image of the vessels in the brain"
+    },
+    {
+      "id": "nsad36",
+      "word-part": "-graphy",
+      "term": "computerized axial tomography",
+      "analysis": "tom/o = to cut",
+      "definition": "X-ray beam that creates a picture of various depths of the brain"
+    },
+    {
+      "id": "nsad37",
+      "word-part": "-graphy",
+      "term": "electroencephalography",
+      "analysis": "electr = electric",
+      "definition": "Process of recording the electric impulses of the brain"
+    },
+    {
+      "id": "nsad38",
+      "word-part": "-graphy",
+      "term": "myelography",
+      "analysis": "myel = spinal cord",
+      "definition": "X-ray image of the spinal cord"
+    },
+    {
+      "id": "nsad39",
+      "word-part": "-kinesia, -kinesis",
+      "term": "hyperkinesis",
+      "analysis": "hyper = above, excessive, -kinesis = movement",
+      "definition": "Excessive movement, hyperactivity"
+    },
+    {
+      "id": "nsad40",
+      "word-part": "-kinesia, -kinesis",
+      "term": "dyskinesia",
+      "analysis": "dys = difficult, bad, -kinesia = movement",
+      "definition": "Difficult movement"
+    },
+    {
+      "id": "nsad41",
+      "word-part": "-oma",
+      "term": "meningioma",
+      "analysis": "mening = meninges",
+      "definition": "Tumor of the meninges"
+    },
+    {
+      "id": "nsad42",
+      "word-part": "-oma",
+      "term": "myeloma",
+      "analysis": "myel = spinal cord",
+      "definition": "Tumor of the spinal cord"
+    },
+    {
+      "id": "nsad43",
+      "word-part": "-otomy",
+      "term": "neurotomy",
+      "analysis": "neur = nerve, -tomy = surgical incision",
+      "definition": "Surgical incision into a nerve"
+    },
+    {
+      "id": "nsad44",
+      "word-part": "-otomy",
+      "term": "craniotomy",
+      "analysis": "crani = skull",
+      "definition": "Creation of an opening into the skull"
+    },
+    {
+      "id": "nsad45",
+      "word-part": "-pathy",
+      "term": "encephalopathy",
+      "analysis": "encephal = brain, -pathy = disease",
+      "definition": "Disease of the brain"
+    },
+    {
+      "id": "nsad46",
+      "word-part": "-pathy",
+      "term": "neuropathy",
+      "analysis": "neur = nerve",
+      "definition": "Disease of the nerve"
+    },
+    {
+      "id": "nsad47",
+      "word-part": "-phasia",
+      "term": "aphasia",
+      "analysis": "a = no, not, phasia = speech",
+      "definition": "No speech"
+    },
+    {
+      "id": "nsad48",
+      "word-part": "-plegia",
+      "term": "hemiplegia",
+      "analysis": "hemi = half, -plegia = paralysis",
+      "definition": "Paralysis of either (half) the right side or left side of the body"
+    },
+    {
+      "id": "nsad49",
+      "word-part": "-plegia",
+      "term": "monoplegia",
+      "analysis": "mono = one",
+      "definition": "Paralysis of one extremity"
+    },
+    {
+      "id": "nsad50",
+      "word-part": "-plegia",
+      "term": "paraplegia",
+      "analysis": "para = beside, near",
+      "definition": "Paralysis of the lower part of the body and legs"
+    },
+    {
+      "id": "nsad51",
+      "word-part": "-plegia",
+      "term": "quadriplegia",
+      "analysis": "para = beside, near",
+      "definition": "Paralysis of the lower part of the body and legs"
+    },
+    {
+      "id": "nsad52",
+      "word-part": "-taxia",
+      "term": "Ataxia",
+      "analysis": "a = no, not, -taxia = order",
+      "definition": "No muscular coordination"
+    },
+    {
+      "id": "nsad53",
+      "word-part": "de-",
+      "term": "Demylination",
+      "analysis": "de- = lack of, removal, mylin = myelin sheath, -ion = process",
+      "definition": "Loss of the myelin sheath"
+    }
+  ],
+  "vocabulary-nervous-system": [
+    {
+      "id": "vn1",
+      "term": "Alzheimer's disease",
+      "meaning": "A severe form of senile dementia that may be due to some defect in the neurotransmitter system. There is cortical destruction that causes variable degrees of confusion, memory loss and other cognitive defects."
+    },
+    {
+      "id": "vn2",
+      "term": "Anorexia nervosa",
+      "meaning": "A complex psychological disorder in which the individual refuses to eat or has an aberrant eating pattern"
+    },
+    {
+      "id": "vn3",
+      "term": "Coma",
+      "meaning": "An unconscious state or stupor from which the patient cannot be aroused"
+    },
+    {
+      "id": "vn4",
+      "term": "Epilepsy",
+      "meaning": "A disorder of cerebral function resulting from abnormal electrical activity or malfunctioning of the chemical substances of the brain"
+    },
+    {
+      "id": "vn5",
+      "term": "Herpes zoster",
+      "meaning": "Shingles, an acute viral disease characterized by painful vesicular eruptions along the segment of the spinal or cranial nerves"
+    },
+    {
+      "id": "vn6",
+      "term": "Paresis",
+      "meaning": "A slight, partial, or incpmplete paralysis"
+    },
+    {
+      "id": "vn7",
+      "term": "Parkinsons disease",
+      "meaning": "A chronic disease of the nervous system. It is characterized by a loss of equilibrium and by salvation, frustration, nausea, dryness of the mouth, and muscular tremors, syncope, and fainting."
+    }
+  ],
+  "abbreviation-nervous-system": [
+    {
+      "id": "an1",
+      "abbreviation": "ALS",
+      "meaning": "Amyotrophic lateral sclerosis"
+    },
+    {
+      "id": "an2",
+      "abbreviation": "ANS",
+      "meaning": "Autonomic nervous system"
+    },
+    {
+      "id": "an3",
+      "abbreviation": "CNS",
+      "meaning": "Central nervous system"
+    },
+    {
+      "id": "an4",
+      "abbreviation": "CSF",
+      "meaning": "Cerebrospinal fluid"
+    },
+    {
+      "id": "an5",
+      "abbreviation": "CT",
+      "meaning": "Computerized tomography"
+    },
+    {
+      "id": "an6",
+      "abbreviation": "CVA",
+      "meaning": "Cerebrovascular accident"
+    },
+    {
+      "id": "an7",
+      "abbreviation": "LP",
+      "meaning": "Lumbar punture"
+    },
+    {
+      "id": "an8",
+      "abbreviation": "MS",
+      "meaning": "Multiple sclerosis"
+    },
+    {
+      "id": "an9",
+      "abbreviation": "PNS",
+      "meaning": "Peripheral nervous system"
+    },
+    {
+      "id": "an10",
+      "abbreviation": "TIA",
+      "meaning": "Transient ischemic attack"
+    },
+    {
+      "id": "an11",
+      "abbreviation": "MRI",
+      "meaning": "Magnetic Resonance Imaging"
     }
   ]
 }

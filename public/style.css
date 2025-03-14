@@ -41,3 +41,11 @@ a:hover {
 .table {
   --bs-table-bg: none;
 }
+
+section {
+  padding: 2rem 0 2rem 0;
+}
+
+.sub-section {
+  padding: 0.5rem 0 0.5rem 0;
+}
